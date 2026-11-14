@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="Portfolio học phần Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo của Tạ Uyên Trang" name="description"/><title>Portfolio chi tiết | Tạ Uyên Trang</title><style>
+:root{--navy:#12374b;--teal:#137f78;--mint:#e9f6f2;--cream:#fffaf0;--coral:#e7775c;--ink:#18313c;--muted:#60747b;--card:#fff;--line:#d8e7e4;--shadow:0 16px 40px rgba(18,55,75,.12)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.65 Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#f7fcfa,#fffaf3)}a{color:inherit}.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{max-width:1180px;margin:auto;display:flex;align-items:center;gap:18px;padding:12px 18px}.brand{font-weight:800;color:var(--navy);white-space:nowrap}.navlinks{display:flex;gap:7px;flex-wrap:wrap;margin-left:auto}.navlinks a,.dropbtn{border:0;background:transparent;padding:8px 10px;border-radius:999px;text-decoration:none;font-weight:700;cursor:pointer}.navlinks a:hover,.navlinks a.active,.dropbtn:hover{background:var(--mint);color:var(--teal)}.dropdown{position:relative}.dropdown-content{display:none;position:absolute;right:0;min-width:285px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:8px;box-shadow:var(--shadow)}.dropdown.open .dropdown-content{display:grid}.dropdown-content a{border-radius:10px}.menu{display:none;margin-left:auto;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 11px}.page{display:none;max-width:1180px;margin:auto;padding:44px 18px 80px;animation:fade .25s ease}.page.active{display:block}@keyframes fade{from{opacity:.4;transform:translateY(5px)}}.hero{display:grid;grid-template-columns:1.4fr .8fr;gap:38px;align-items:center;min-height:72vh}.eyebrow{font-weight:800;color:var(--teal);letter-spacing:.08em;text-transform:uppercase}.hero h1{font-size:clamp(2.4rem,6vw,5.4rem);line-height:1.02;margin:.15em 0;color:var(--navy)}.lead{font-size:1.18rem;color:var(--muted);max-width:750px}.portrait{width:min(100%,390px);aspect-ratio:4/5;object-fit:cover;border-radius:42% 42% 24px 24px;box-shadow:var(--shadow);border:8px solid #fff}.actions{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:12px;background:var(--teal);color:#fff;text-decoration:none;font-weight:800;border:1px solid var(--teal)}.btn.secondary{background:#fff;color:var(--navy);border-color:var(--line)}.stats,.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.stat,.card,.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 24px rgba(18,55,75,.07)}.stat b{display:block;font-size:1.7rem;color:var(--coral)}h2{font-size:clamp(1.8rem,3vw,3rem);line-height:1.15;color:var(--navy);margin:.2em 0 .75em}h3{color:var(--teal);margin-top:1.7em}.section-intro{max-width:800px;color:var(--muted)}.project-card{display:flex;flex-direction:column}.project-card .num{font-size:2rem;font-weight:900;color:var(--coral)}.project-card .btn{margin-top:auto}.pill{display:inline-block;background:var(--mint);color:var(--teal);font-weight:800;padding:4px 10px;border-radius:999px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.notice{border-left:5px solid var(--coral);background:#fff4ef;padding:15px 17px;border-radius:12px}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}.gallery figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(18,55,75,.07)}.gallery img{width:100%;height:auto;display:block}.gallery figcaption{padding:10px 13px;color:var(--muted);font-size:.92rem}.imgbtn{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:14px}table{border-collapse:collapse;width:100%;background:#fff}th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--mint);color:var(--navy)}.pager{display:flex;justify-content:space-between;gap:12px;margin-top:34px}.footer{background:var(--navy);color:#e7f5f2;padding:28px 18px}.footer div{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.lightbox{position:fixed;inset:0;background:rgba(3,18,24,.92);z-index:99;display:none;align-items:center;justify-content:center;padding:20px}.lightbox.open{display:flex}.lightbox img{max-width:95vw;max-height:90vh;border-radius:10px}.close{position:absolute;top:18px;right:20px;background:#fff;border:0;border-radius:50%;width:44px;height:44px;font-size:24px}.ai{font-size:.92rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:12px;margin-top:18px}.operators code{display:block;background:#102d3b;color:#d7fff4;padding:10px;border-radius:8px;margin:7px 0;white-space:normal}@media(max-width:850px){.hero,.grid2{grid-template-columns:1fr}.stats,.cards{grid-template-columns:1fr 1fr}.portrait{margin:auto}.menu{display:block}.navlinks{display:none;position:absolute;top:62px;left:12px;right:12px;background:#fff;padding:12px;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.navlinks.open{display:grid}.dropdown-content{position:static;box-shadow:none;margin-top:5px}.gallery{grid-template-columns:1fr}}@media(max-width:540px){.stats,.cards{grid-template-columns:1fr}.page{padding-top:28px}.hero{min-height:0}.pager{flex-direction:column}.btn{width:100%}}
+
+.source-detail{margin-top:34px;padding-top:8px;border-top:2px solid var(--line)}
+.source-detail h4{color:var(--navy);font-size:1.12rem;margin:1.45em 0 .55em}
+.source-detail h5{color:var(--teal);font-size:1rem;margin:1.2em 0 .45em}
+.source-detail p,.source-detail li{max-width:1000px}
+.source-detail ul,.source-detail ol{padding-left:1.4rem}
+.detail-intro{background:var(--mint);border-left:5px solid var(--teal);padding:14px 16px;border-radius:12px;color:var(--navy);font-weight:650}
+.detail-table{margin:14px 0 24px}.detail-table table{min-width:720px}.detail-table p{margin:.15em 0}
+.search-visual{margin:28px 0}.process-figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 8px 24px rgba(18,55,75,.07);overflow:auto}.process-figure svg{display:block;min-width:850px;width:100%;height:auto}.process-figure figcaption{color:var(--muted);font-size:.92rem;margin-top:8px}
+@media(max-width:850px){.source-detail{margin-top:26px}.detail-table table{min-width:650px}}
+</style><meta content="Portfolio học phần INF2501 của Tạ Uyên Trang, trình bày chi tiết 6 bài tập cùng bảng kết quả và hình minh họa." name="description"/></head><body><header class="top"><nav class="nav"><a class="brand" href="#about">♫ TẠ UYÊN TRANG</a><button aria-label="Mở menu" class="menu">☰</button><div class="navlinks"><a href="#about">Giới thiệu</a><div class="dropdown"><button class="dropbtn">Dự án ▾</button><div class="dropdown-content"><a href="#projects">Tổng quan dự án</a><a href="#bai-1">Bài 1 · Tệp và thư mục</a><a href="#bai-2">Bài 2 · Tìm kiếm học thuật</a><a href="#bai-3">Bài 3 · Viết prompt</a><a href="#bai-4">Bài 4 · Hợp tác trực tuyến</a><a href="#bai-5">Bài 5 · Sáng tạo bằng AI</a><a href="#bai-6">Bài 6 · AI có trách nhiệm</a></div></div><a href="#conclusion">Tổng kết</a></div></nav></header><main>
+<section class="page" id="about"><div class="hero"><div><div class="eyebrow">Portfolio học phần · INF2501</div><h1>Âm nhạc, sư phạm và công nghệ số</h1><p class="lead">Tôi là <strong>Tạ Uyên Trang</strong>, sinh viên lớp <strong>K20A SPAN</strong>, ngành <strong>Sư phạm âm nhạc</strong>. Portfolio lưu giữ sáu sản phẩm học tập và tiến trình phát triển kỹ năng số của tôi.</p><div class="actions"><a class="btn" href="#projects">Khám phá dự án</a><a class="btn secondary" download="" href="downloads/2552210049_TaUyenTrang_BaoCao.docx">⬇ Tải báo cáo Word</a></div><div class="stats"><div class="stat"><b>06</b>Bài tập hoàn chỉnh</div><div class="stat"><b>09</b>Trang theo đề thi</div><div class="stat"><b>01</b>Định hướng nghề nghiệp</div></div></div><img alt="Ảnh hồ sơ sinh viên Tạ Uyên Trang" class="portrait" src="images/image-01.jpg"/></div><div class="grid2"><div class="panel"><h3>Sở thích</h3><p>Đàn và nhảy múa. Giai điệu, nhịp phách và chuyển động là nguồn cảm hứng giúp tôi phát triển cảm nhận tiết tấu và ý tưởng hoạt động âm nhạc tương tác.</p></div><div class="panel"><h3>Mục tiêu học tập</h3><p>Nắm vững chuyên môn âm nhạc, phát triển kỹ năng biểu diễn gồm thanh nhạc và nhạc cụ, đồng thời tiếp cận các phương pháp sư phạm hiện đại.</p></div><div class="panel"><h3>Định hướng phát triển</h3><p>Trở thành giáo viên âm nhạc giỏi, linh hoạt ứng dụng công nghệ trong giảng dạy và phát triển các hoạt động nghệ thuật, giáo dục cộng đồng.</p></div><div class="panel"><h3>Mục tiêu Portfolio</h3><p>Hệ thống hóa sáu sản phẩm học tập, lưu trữ học liệu cá nhân và thể hiện sự liên kết giữa kỹ năng công nghệ với định hướng nghề nghiệp Sư phạm âm nhạc.</p></div></div><div class="pager"><span></span><a class="btn" href="#projects">Trang Dự án →</a></div></section>
+<section class="page" id="projects"><span class="pill">Projects</span><h2>Sáu dự án học tập</h2><p class="section-intro">Mỗi bài tập có một trang riêng gồm mục tiêu, quá trình thực hiện, công cụ, khó khăn, cách giải quyết, sản phẩm cuối cùng và hình minh họa.</p><div class="cards"><article class="card project-card"><div class="num">01</div><h3>Chương 1 · Tệp và thư mục</h3><p>Thực hành 12 bước trên Windows và xây dựng quy tắc đặt tên.</p><a class="btn secondary" href="#bai-1">Xem bài tập</a></article><article class="card project-card"><div class="num">02</div><h3>Chương 2 · Tìm kiếm học thuật</h3><p>Đánh giá 11 nguồn về công nghệ trong giáo dục âm nhạc.</p><a class="btn secondary" href="#bai-2">Xem bài tập</a></article><article class="card project-card"><div class="num">03</div><h3>Chương 3 · Viết prompt hiệu quả</h3><p>So sánh prompt cơ bản, cải tiến và nâng cao.</p><a class="btn secondary" href="#bai-3">Xem bài tập</a></article><article class="card project-card"><div class="num">04</div><h3>Chương 4 · Hợp tác trực tuyến</h3><p>Lập kế hoạch Teams và quản lý dự án bằng Trello.</p><a class="btn secondary" href="#bai-4">Xem bài tập</a></article><article class="card project-card"><div class="num">05</div><h3>Chương 5 · Sáng tạo nội dung số</h3><p>Poster và kịch bản “Nhịp điệu quanh em”.</p><a class="btn secondary" href="#bai-5">Xem bài tập</a></article><article class="card project-card"><div class="num">06</div><h3>Chương 6 · AI có trách nhiệm</h3><p>Mười nguyên tắc cá nhân và checklist kiểm soát.</p><a class="btn secondary" href="#bai-6">Xem bài tập</a></article></div><div class="pager"><a class="btn secondary" href="#about">← Giới thiệu</a><a class="btn" href="#bai-1">Bắt đầu Bài 1 →</a></div></section>
+<section class="page" id="bai-1"><span class="pill">Chương 1</span><h2>Bài 1 · Chương 1: Máy tính và các thiết bị ngoại vi · Thao tác cơ bản với tệp tin và thư mục</h2><div class="grid2"><div class="panel"><h3>Mục tiêu bài tập</h3><p>Rèn luyện kỹ năng tạo, đổi tên, sao chép, di chuyển, xóa và khôi phục tệp/thư mục trên Windows; hình thành quy tắc tổ chức tài nguyên số.</p></div><div class="panel"><h3>Sản phẩm cuối cùng</h3><p>Hoàn thành chuỗi 12 bước. Cấu trúc tối ưu: <code>ThucHanh_TaUyenTrang/TaiLieu</code>. Quy tắc đặt tên: chữ không dấu, không khoảng trắng, tên mô tả rõ nội dung và không chứa dữ liệu nhạy cảm.</p><div class="actions"><a class="btn secondary" download="Bai_tap_1_Ta_Uyen_Trang.docx" href="downloads/Bai_tap_1_Ta_Uyen_Trang.docx" title="Tải bản Word gốc">⬇ Tải file Word</a></div></div></div><h3>Tóm tắt quá trình thực hiện</h3><p>Tạo thư mục <code>ThucHanh_TaUyenTrang</code> và thư mục con <code>TaiLieu</code>; tạo <code>GhiChu.txt</code>, đổi thành <code>GhiChuQuanTrong.txt</code>; thực hành Copy/Paste, Cut/Paste, Delete, Shift+Delete và Restore.</p><div class="notice"><strong>Khó khăn và cách giải quyết:</strong> cần phân biệt xóa vào Thùng rác và xóa vĩnh viễn; trước Shift+Delete phải kiểm tra đúng tệp và chỉ thao tác với dữ liệu thực hành.</div><h3>Toàn bộ ảnh minh họa từng bước</h3><div class="gallery"><figure><button aria-label="Mở ảnh: Mở File Explorer" class="imgbtn"><img alt="Mở File Explorer" loading="lazy" src="images/image-02.png"/></button><figcaption>Mở File Explorer</figcaption></figure><figure><button aria-label="Mở ảnh: Truy cập ổ đĩa hoặc thư mục" class="imgbtn"><img alt="Truy cập ổ đĩa hoặc thư mục" loading="lazy" src="images/image-03.png"/></button><figcaption>Truy cập ổ đĩa hoặc thư mục</figcaption></figure><figure><button aria-label="Mở ảnh: Tạo thư mục mới" class="imgbtn"><img alt="Tạo thư mục mới" loading="lazy" src="images/image-04.png"/></button><figcaption>Tạo thư mục mới</figcaption></figure><figure><button aria-label="Mở ảnh: Đặt tên và mở thư mục" class="imgbtn"><img alt="Đặt tên và mở thư mục" loading="lazy" src="images/image-05.png"/></button><figcaption>Đặt tên và mở thư mục</figcaption></figure><figure><button aria-label="Mở ảnh: Tạo tệp văn bản" class="imgbtn"><img alt="Tạo tệp văn bản" loading="lazy" src="images/image-06.png"/></button><figcaption>Tạo tệp văn bản</figcaption></figure><figure><button aria-label="Mở ảnh: Đổi tên tệp tin" class="imgbtn"><img alt="Đổi tên tệp tin" loading="lazy" src="images/image-07.png"/></button><figcaption>Đổi tên tệp tin</figcaption></figure><figure><button aria-label="Mở ảnh: Tạo thư mục con TaiLieu" class="imgbtn"><img alt="Tạo thư mục con TaiLieu" loading="lazy" src="images/image-08.png"/></button><figcaption>Tạo thư mục con TaiLieu</figcaption></figure><figure><button aria-label="Mở ảnh: Sao chép tệp: Copy" class="imgbtn"><img alt="Sao chép tệp: Copy" loading="lazy" src="images/image-09.png"/></button><figcaption>Sao chép tệp: Copy</figcaption></figure><figure><button aria-label="Mở ảnh: Sao chép tệp: Paste" class="imgbtn"><img alt="Sao chép tệp: Paste" loading="lazy" src="images/image-10.png"/></button><figcaption>Sao chép tệp: Paste</figcaption></figure><figure><button aria-label="Mở ảnh: Tạo tệp DiChuyen.txt" class="imgbtn"><img alt="Tạo tệp DiChuyen.txt" loading="lazy" src="images/image-11.png"/></button><figcaption>Tạo tệp DiChuyen.txt</figcaption></figure><figure><button aria-label="Mở ảnh: Cắt tệp: Cut" class="imgbtn"><img alt="Cắt tệp: Cut" loading="lazy" src="images/image-12.png"/></button><figcaption>Cắt tệp: Cut</figcaption></figure><figure><button aria-label="Mở ảnh: Dán tệp: Paste" class="imgbtn"><img alt="Dán tệp: Paste" loading="lazy" src="images/image-13.png"/></button><figcaption>Dán tệp: Paste</figcaption></figure><figure><button aria-label="Mở ảnh: Xóa tệp vào Recycle Bin" class="imgbtn"><img alt="Xóa tệp vào Recycle Bin" loading="lazy" src="images/image-14.png"/></button><figcaption>Xóa tệp vào Recycle Bin</figcaption></figure><figure><button aria-label="Mở ảnh: Xóa vĩnh viễn bằng Shift + Delete" class="imgbtn"><img alt="Xóa vĩnh viễn bằng Shift + Delete" loading="lazy" src="images/image-15.png"/></button><figcaption>Xóa vĩnh viễn bằng Shift + Delete</figcaption></figure><figure><button aria-label="Mở ảnh: Khôi phục tệp từ Recycle Bin" class="imgbtn"><img alt="Khôi phục tệp từ Recycle Bin" loading="lazy" src="images/image-16.png"/></button><figcaption>Khôi phục tệp từ Recycle Bin</figcaption></figure></div><p class="ai">AI không thực hiện thao tác trên máy. AI chỉ hỗ trợ biên tập diễn đạt và tạo một số hình minh họa; hình trong bài được ghi rõ là minh họa mô phỏng.</p><div class="source-detail"><h3>Nội dung trình bày chi tiết</h3><p class="detail-intro">Phần dưới đây bổ sung đầy đủ nội dung đã thực hiện trong file Word tương ứng, gồm quy trình, công cụ, bảng kết quả, khó khăn, cách xử lý và tự đánh giá.</p><h4><strong>BÀI THỰC HÀNH 1</strong></h4><p><strong>QUẢN LÝ TỆP TIN VÀ THƯ MỤC TRÊN WINDOWS</strong></p><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Sinh viên</strong></th>
+<th>Tạ Uyên Trang</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Thư mục thực hành</strong></td>
+<td>ThucHanh_TaUyenTrang</td>
+</tr>
+<tr>
+<td><strong>Nội dung</strong></td>
+<td>Tạo, đổi tên, sao chép, di chuyển, xóa và khôi phục tệp/thư mục</td>
+</tr>
+</tbody>
+</table></div><h4>Mục tiêu</h4><p>Rèn luyện kỹ năng tạo, đổi tên, sao chép, di chuyển, xóa tệp tin và thư mục một cách thành thạo trên hệ điều hành Windows.</p><p><strong>Lưu ý về hình minh họa:</strong> Các ảnh dưới đây là ảnh minh họa mô phỏng giao diện Windows 11 để trình bày đúng thao tác. Khi nộp bài chính thức, nếu giảng viên yêu cầu bằng chứng thực hành thực tế, nên thay bằng ảnh chụp màn hình trên máy của sinh viên.</p><h4><strong>Bước 1. Mở File Explorer</strong></h4><p>Nhấn tổ hợp phím Windows + E hoặc nhấp vào biểu tượng thư mục File Explorer trên thanh tác vụ.</p><h4><strong>Bước 2. Truy cập ổ đĩa/thư mục</strong></h4><p>Ở cột bên trái, chọn This PC, sau đó mở Local Disk (D:). Nếu máy chỉ có ổ C:, có thể thực hiện trong thư mục Documents/…</p><h4><strong>Bước 3. Tạo thư mục mới</strong></h4><p>Trong Downloads: Nhấp chuột phải vào khoảng trống → New → Folder.</p><h4><strong>Bước 4. Đặt tên và mở thư mục</strong></h4><p>Đặt tên thư mục là ThucHanh_TaUyenTrang, nhấn Enter, sau đó nhấp đúp để mở thư mục.</p><h4><strong>Bước 5. Tạo tệp văn bản</strong></h4><p>Trong thư mục ThucHanh_TaUyenTrang, nhấp chuột phải vào khoảng trống → New → Text Document. Đặt tên là GhiChu.txt và nhấn Enter.</p><h4><strong>Bước 6. Đổi tên tệp tin</strong></h4><p>Nhấp chuột phải vào GhiChu.txt → Rename. Đổi tên thành GhiChuQuanTrong.txt và nhấn Enter.</p><h4><strong>Bước 7. Tạo thư mục con</strong></h4><p>Trong thư mục ThucHanh_TaUyenTrang, tạo một thư mục mới và đặt tên là TaiLieu.</p><h4><strong>Bước 8. Sao chép tệp tin (Copy &amp; Paste)</strong></h4><p>8.1 Chọn GhiChuQuanTrong.txt → Copy (hoặc Ctrl + C).</p><p>8.2 Mở thư mục TaiLieu → Paste (hoặc Ctrl + V). Kết quả: TaiLieu có một bản sao của GhiChuQuanTrong.txt.</p><p><strong><br/>
+</strong></p><h4><strong>Bước 9. Di chuyển tệp tin (Cut &amp; Paste)</strong></h4><p>9.1 Quay lại ThucHanh_TaUyenTrang, tạo tệp DiChuyen.txt.</p><p>9.2 Chọn tệp → Cut (hoặc Ctrl + X)</p><p>9.3 Mở TaiLieu → Paste (hoặc Ctrl + V). Tệp gốc không còn ở vị trí cũ.</p><p><strong><br/>
+</strong></p><h4><strong>Bước 10. Xóa tệp tin</strong></h4><p>Trong thư mục TaiLieu, chọn GhiChuQuanTrong.txt → Delete. Tệp được chuyển vào Recycle Bin.</p><h4><strong>Bước 11. Xóa vĩnh viễn</strong></h4><p>Trong thư mục TaiLieu, chọn DiChuyen.txt, nhấn Shift + Delete. Khi hộp thoại cảnh báo xuất hiện, chọn Yes để xóa vĩnh viễn, không qua Recycle Bin.</p><h4><strong>Bước 12. Khôi phục từ Thùng rác (tùy chọn)</strong></h4><p>Mở Recycle Bin, chọn GhiChuQuanTrong.txt đã xóa và nhấn Restore. Tệp sẽ trở lại vị trí ban đầu.</p><h4><strong>HOÀN THÀNH BÀI THỰC HÀNH 1</strong></h4></div><div class="pager"><a class="btn secondary" href="#projects">← Trang trước</a><a class="btn" href="#bai-2">Trang tiếp theo →</a></div></section><section class="page" id="bai-2"><span class="pill">Chương 2</span><h2>Bài 2 · Chương 2: Khai thác dữ liệu và thông tin · Tìm kiếm và đánh giá thông tin học thuật</h2><div class="grid2"><div class="panel"><h3>Mục tiêu bài tập</h3><p>Tìm kiếm và đánh giá nguồn học thuật về ứng dụng công nghệ số và AI trong dạy – học âm nhạc.</p></div><div class="panel"><h3>Sản phẩm cuối cùng</h3><p>Tổng hợp 11 nguồn, trong đó có bài báo khoa học, sách chuyên khảo, nguồn tạp chí chuyên ngành và nguồn thực tiễn. Công nghệ có tiềm năng hỗ trợ kỹ năng, động lực và phản hồi, nhưng hiệu quả phụ thuộc thiết kế sư phạm.</p><div class="actions"><a class="btn secondary" download="Bai_tap_2_Ta_Uyen_Trang.docx" href="downloads/Bai_tap_2_Ta_Uyen_Trang.docx" title="Tải bản Word gốc">⬇ Tải file Word</a></div></div></div><h3>Tóm tắt quá trình thực hiện</h3><p>Sử dụng các từ khóa “music education technology”, “digital tools music education”, “AI music education”, “music teacher digital competence” và “technology-enhanced music learning”. Nguồn được xem xét theo tác giả, cơ quan xuất bản, DOI, phương pháp, tính cập nhật và khả năng kiểm chứng.</p><div class="notice"><strong>Khó khăn và cách giải quyết:</strong> chất lượng nguồn không đồng đều. Vì vậy, ưu tiên tổng quan hệ thống, DOI, tạp chí/nhà xuất bản uy tín và đối chiếu nhiều nguồn.</div><h3>Các câu lệnh tìm kiếm nâng cao đề xuất</h3><div class="notice">Đây là mẫu hoàn thiện Portfolio theo xác nhận của sinh viên, không được trình bày như lịch sử tìm kiếm thực tế.</div><div class="operators"><code>"music education technology" AND pedagogy</code><code>"digital tools" AND "music education" filetype:pdf</code><code>site:sagepub.com "music education" technology</code><code>site:sciencedirect.com "technology-enhanced music learning"</code><code>"AI music education" -marketing</code></div><div aria-label="Sơ đồ minh họa quy trình tìm kiếm và đánh giá nguồn học thuật" class="search-visual">
+<h3>Sơ đồ quy trình tìm kiếm và đánh giá nguồn</h3>
+<figure class="process-figure">
+<svg aria-labelledby="searchProcessTitle searchProcessDesc" role="img" viewbox="0 0 1120 250" xmlns="http://www.w3.org/2000/svg">
+<title id="searchProcessTitle">Quy trình năm bước tìm kiếm và đánh giá nguồn học thuật</title>
+<desc id="searchProcessDesc">Chọn chủ đề, lập từ khóa và toán tử, tìm nguồn, đánh giá độ tin cậy, rồi tổng hợp và trích dẫn.</desc>
+<defs><marker id="arrow" markerheight="9" markerwidth="9" orient="auto" refx="7" refy="3.5"><polygon fill="#137f78" points="0 0, 8 3.5, 0 7"></polygon></marker></defs>
+<g font-family="Inter, Segoe UI, Arial, sans-serif" text-anchor="middle">
+<g transform="translate(15,55)"><rect fill="#e9f6f2" height="120" rx="18" stroke="#137f78" stroke-width="2" width="190"></rect><circle cx="95" cy="30" fill="#137f78" r="18"></circle><text fill="white" font-size="18" font-weight="700" x="95" y="36">1</text><text fill="#12374b" font-size="18" font-weight="700" x="95" y="72">Chọn chủ đề</text><text fill="#60747b" font-size="14" x="95" y="98">Xác định phạm vi</text></g>
+<line marker-end="url(#arrow)" stroke="#137f78" stroke-width="3" x1="210" x2="235" y1="115" y2="115"></line>
+<g transform="translate(240,55)"><rect fill="#fffaf0" height="120" rx="18" stroke="#e7775c" stroke-width="2" width="190"></rect><circle cx="95" cy="30" fill="#e7775c" r="18"></circle><text fill="white" font-size="18" font-weight="700" x="95" y="36">2</text><text fill="#12374b" font-size="18" font-weight="700" x="95" y="72">Từ khóa + toán tử</text><text fill="#60747b" font-size="14" x="95" y="98">AND, site:, filetype:</text></g>
+<line marker-end="url(#arrow)" stroke="#137f78" stroke-width="3" x1="435" x2="460" y1="115" y2="115"></line>
+<g transform="translate(465,55)"><rect fill="#e9f6f2" height="120" rx="18" stroke="#137f78" stroke-width="2" width="190"></rect><circle cx="95" cy="30" fill="#137f78" r="18"></circle><text fill="white" font-size="18" font-weight="700" x="95" y="36">3</text><text fill="#12374b" font-size="18" font-weight="700" x="95" y="72">Tìm nguồn</text><text fill="#60747b" font-size="14" x="95" y="98">Tạp chí, DOI, sách</text></g>
+<line marker-end="url(#arrow)" stroke="#137f78" stroke-width="3" x1="660" x2="685" y1="115" y2="115"></line>
+<g transform="translate(690,55)"><rect fill="#fffaf0" height="120" rx="18" stroke="#e7775c" stroke-width="2" width="190"></rect><circle cx="95" cy="30" fill="#e7775c" r="18"></circle><text fill="white" font-size="18" font-weight="700" x="95" y="36">4</text><text fill="#12374b" font-size="18" font-weight="700" x="95" y="72">Đánh giá</text><text fill="#60747b" font-size="14" x="95" y="98">Tác giả, phương pháp</text></g>
+<line marker-end="url(#arrow)" stroke="#137f78" stroke-width="3" x1="885" x2="910" y1="115" y2="115"></line>
+<g transform="translate(915,55)"><rect fill="#e9f6f2" height="120" rx="18" stroke="#137f78" stroke-width="2" width="190"></rect><circle cx="95" cy="30" fill="#137f78" r="18"></circle><text fill="white" font-size="18" font-weight="700" x="95" y="36">5</text><text fill="#12374b" font-size="18" font-weight="700" x="95" y="72">Tổng hợp</text><text fill="#60747b" font-size="14" x="95" y="98">So sánh và trích dẫn</text></g>
+</g>
+</svg>
+<figcaption>Sơ đồ minh họa được tổng hợp từ quy trình trong Bài tập 2; đây không phải ảnh chụp lịch sử tìm kiếm thực tế.</figcaption>
+</figure>
+</div><div class="gallery"></div><p class="ai">Microsoft Copilot hỗ trợ cấu trúc và diễn đạt; sinh viên chọn chủ đề, kiểm tra nguồn và chịu trách nhiệm về đánh giá.</p><div class="source-detail"><h3>Nội dung trình bày chi tiết</h3><p class="detail-intro">Phần dưới đây bổ sung đầy đủ nội dung đã thực hiện trong file Word tương ứng, gồm quy trình, công cụ, bảng kết quả, khó khăn, cách xử lý và tự đánh giá.</p><h4><strong>BÀI TẬP 2<br/>
+TÌM KIẾM VÀ ĐÁNH GIÁ THÔNG TIN HỌC THUẬT</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Họ tên</strong></th>
+<th style="text-align: left;">Tạ Uyên Trang</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ngành</strong></td>
+<td style="text-align: left;">Sư phạm âm nhạc</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sở thích</strong></td>
+<td style="text-align: left;">Đàn, nhảy múa</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Mục tiêu học tập</strong></td>
+<td style="text-align: left;">Nắm vững chuyên môn âm nhạc, kỹ năng biểu diễn và phương pháp sư phạm hiện đại.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Định hướng</strong></td>
+<td style="text-align: left;">Trở thành giáo viên âm nhạc giỏi, linh hoạt ứng dụng công nghệ trong giảng dạy và phát triển hoạt động nghệ thuật, giáo dục cộng đồng.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Chủ đề</strong></td>
+<td style="text-align: left;">Ứng dụng công nghệ số và AI trong dạy – học âm nhạc: hiệu quả, năng lực giáo viên và những giới hạn sư phạm.</td>
+</tr>
+</tbody>
+</table></div><h4><strong>1. Lựa chọn chủ đề và phạm vi tìm kiếm</strong></h4><p>Với định hướng nghề nghiệp Sư phạm âm nhạc, tôi chọn chủ đề “Ứng dụng công nghệ số và AI trong dạy – học âm nhạc”. Phạm vi tập trung vào đào tạo giáo viên âm nhạc, phát triển kỹ năng biểu diễn, phản hồi học tập, động lực người học và thiết kế sư phạm trong môi trường có công nghệ. Chủ đề vừa gắn với chuyên môn biểu diễn, vừa phù hợp mục tiêu ứng dụng công nghệ trong giảng dạy.</p><h4><strong>2. Chiến lược và nguồn tìm kiếm</strong></h4><p>Từ khóa sử dụng: “music education technology”, “digital tools music education”, “AI music education”, “music teacher digital competence”, “technology-enhanced music learning”. Tôi đối chiếu thông tin từ cơ sở dữ liệu/tạp chí học thuật, trang của hiệp hội chuyên ngành, sách chuyên khảo từ nhà xuất bản học thuật và nguồn mở trên Internet. Ưu tiên tài liệu có tác giả rõ ràng, DOI/nhà xuất bản, mô tả phương pháp nghiên cứu và tính cập nhật.</p><h4><strong>3. Tổng quan kết quả tìm kiếm</strong></h4><p>Các tài liệu gần đây cho thấy công nghệ số có tiềm năng hỗ trợ kỹ năng âm nhạc, động lực, phản hồi và năng lực số của giáo viên tương lai. Tuy vậy, bằng chứng không đồng đều: các tổng quan hệ thống cũng chỉ ra hạn chế thiết kế nghiên cứu, sự thiên lệch về nhóm người học và rủi ro phụ thuộc khi AI thay thế quá nhiều hoạt động tự đánh giá. Vì vậy, công nghệ nên được xem là công cụ hỗ trợ mục tiêu sư phạm, không phải mục tiêu tự thân.</p><h4><strong>4. Bảng tổng hợp và đánh giá độ tin cậy</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 5%"/>
+<col style="width: 28%"/>
+<col style="width: 28%"/>
+<col style="width: 9%"/>
+<col style="width: 28%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">STT</th>
+<th style="text-align: center;">NGUỒN</th>
+<th style="text-align: center;">LOẠI/PHƯƠNG PHÁP</th>
+<th style="text-align: center;">ĐỘ TIN CẬY</th>
+<th style="text-align: center;">LÝ DO ĐÁNH GIÁ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Peng et al. (2026)<br/>
+Frontiers in Psychology</td>
+<td style="text-align: left;">Tổng quan hệ thống PRISMA; 21 nghiên cứu</td>
+<td style="text-align: left;">Rất cao</td>
+<td style="text-align: left;">Bài báo KH; DOI; phương pháp rõ; rất mới</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Mohammadian, Pourroostaei Ardakani &amp; Zaraii Zavaraki (2026)<br/>
+Computers and Education Open / Elsevier</td>
+<td style="text-align: left;">Tổng quan 30 nghiên cứu (2010–2024)</td>
+<td style="text-align: left;">Rất cao</td>
+<td style="text-align: left;">Tạp chí học thuật; DOI; tổng hợp nhiều CSDL</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Liu et al. (2025)<br/>
+Music &amp; Science / SAGE</td>
+<td style="text-align: left;">Tổng quan hệ thống; 15 nghiên cứu sau sàng lọc</td>
+<td style="text-align: left;">Rất cao</td>
+<td style="text-align: left;">Tạp chí phản biện; DOI; có đánh giá hạn chế phương pháp</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Cuervo et al. (2023)<br/>
+Education Sciences / MDPI</td>
+<td style="text-align: left;">Mixed-method; 23 GV tương lai; pre–post</td>
+<td style="text-align: left;">Cao</td>
+<td style="text-align: left;">Bài nghiên cứu có DOI, phương pháp và mẫu nêu rõ</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">Ping &amp; De Vera (2023)<br/>
+International Journal of Science and Engineering Applications</td>
+<td style="text-align: left;">Bài tổng quan về tác động công nghệ</td>
+<td style="text-align: left;">Khá</td>
+<td style="text-align: left;">Có DOI, nhưng nguồn/tạp chí ít uy tín hơn các nguồn trên</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">Jing (2024)<br/>
+International Journal of Social Science and Humanities Research</td>
+<td style="text-align: left;">Literature review + case studies + qualitative data</td>
+<td style="text-align: left;">Khá</td>
+<td style="text-align: left;">Có DOI Zenodo; mô tả phương pháp, nhưng cần đối chiếu nguồn mạnh hơn</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">Ruthmann &amp; Mantie (eds.) (2017)<br/>
+Oxford University Press</td>
+<td style="text-align: left;">Sách chuyên khảo/handbook</td>
+<td style="text-align: left;">Rất cao</td>
+<td style="text-align: left;">Nhà xuất bản học thuật uy tín; nền tảng lý luận rộng</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">NAfME – Journal of Research in Music Education<br/>
+National Association for Music Education</td>
+<td style="text-align: left;">Nguồn tạp chí phản biện chuyên ngành</td>
+<td style="text-align: left;">Cao</td>
+<td style="text-align: left;">Hiệp hội chuyên ngành; JRME là tạp chí phản biện hàng quý</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">NAfME – Update: Applications of Research in Music Education<br/>
+National Association for Music Education</td>
+<td style="text-align: left;">Tạp chí phản biện, kết nối nghiên cứu với thực hành</td>
+<td style="text-align: left;">Cao</td>
+<td style="text-align: left;">Nguồn chuyên ngành chính thống, định hướng ứng dụng lớp học</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;">Tài liệu đào tạo AI_GV_ACV<br/>
+Tài liệu nội bộ TRAINOCATE Vietnam</td>
+<td style="text-align: left;">Tài liệu đào tạo ứng dụng AI trong giáo dục</td>
+<td style="text-align: left;">Trung bình–khá</td>
+<td style="text-align: left;">Hữu ích về ứng dụng thực tiễn; không phải bài báo phản biện</td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;">Oxford University Press – Technology in Music Education<br/>
+Oxford University Press</td>
+<td style="text-align: left;">Danh mục sách chuyên ngành công nghệ &amp; giáo dục âm nhạc</td>
+<td style="text-align: left;">Cao</td>
+<td style="text-align: left;">Nguồn NXB học thuật; dùng để định vị sách chuyên khảo</td>
+</tr>
+</tbody>
+</table></div><h4><strong>5. Đánh giá theo các tiêu chí</strong></h4><p>Tác giả và cơ quan xuất bản: ưu tiên nhóm tác giả có đơn vị học thuật rõ ràng, tạp chí phản biện và nhà xuất bản như Elsevier, SAGE, Oxford University Press. Nguồn hiệp hội NAfME phù hợp để xác định các tạp chí chuyên ngành và định hướng thực hành.</p><p>Phương pháp nghiên cứu: ba tổng quan hệ thống (Peng et al.; Mohammadian et al.; Liu et al.) có giá trị cao vì công bố tiêu chí/chiến lược tổng hợp. Cuervo et al. dùng mixed-method và so sánh pre–post trên 23 giáo viên tương lai, phù hợp trực tiếp với đào tạo giáo viên âm nhạc. Các bài tổng quan thông thường hữu ích để định hướng nhưng có sức nặng thấp hơn tổng quan hệ thống.</p><p>Trích dẫn và khả năng kiểm chứng: ưu tiên DOI, thông tin tạp chí, nhà xuất bản và mô tả phương pháp. Tài liệu nội bộ được dùng như nguồn thực tiễn bổ sung, không thay thế bằng chứng phản biện.</p><p>Tính cập nhật: các nguồn 2025–2026 phản ánh nhanh sự phát triển công nghệ/AI; handbook 2017 vẫn có giá trị nền tảng về mối quan hệ giữa công nghệ và giáo dục âm nhạc.</p><h4><strong>6. Kết luận và liên hệ định hướng cá nhân</strong></h4><p>Qua tìm kiếm, tôi nhận thấy ứng dụng công nghệ trong giáo dục âm nhạc có triển vọng rõ ở phản hồi luyện tập, hỗ trợ kỹ năng, động lực, sáng tạo và phát triển năng lực số. Tuy nhiên, hiệu quả phụ thuộc vào thiết kế sư phạm và chất lượng bằng chứng. Đối với mục tiêu trở thành giáo viên âm nhạc, tôi sẽ ưu tiên công nghệ giúp người học nghe – tự đánh giá – sửa lỗi – biểu diễn – phản tư, đồng thời giữ vai trò trung tâm của tai nghe âm nhạc, cảm thụ, tương tác thầy trò và năng lực biểu diễn thực tế.</p><h4><strong>7. Danh mục tài liệu tham khảo (Harvard)</strong></h4><ol type="i">
+<li><p>Cuervo, L., Bonastre, C., Camilli, C., Arroyo, D. and García, D. (2023) “Digital Competences in Teacher Training and Music Education via Service Learning: A Mixed-Method Research Project”, Education Sciences, 13(5), 459. doi:10.3390/educsci13050459.</p></li>
+<li><p>Jing, Y. (2024) “Digital Innovations in Music Education: Assessing the Impact of Technology-Enhanced Learning in University-Level Music Programs”, International Journal of Social Science and Humanities Research, 12(4), pp.132–141. doi:10.5281/zenodo.14000258.</p></li>
+<li><p>Liu, Y., Tran, V.C., Kiss, B., Oo, T.Z., Szabó, N. and Józsa, K. (2025) “The Use and Effectiveness of Digital Tools in Elementary Music Education: A Systematic Review”, Music &amp; Science, 8. doi:10.1177/20592043251363338.</p></li>
+<li><p>Mohammadian, R., Pourroostaei Ardakani, S. and Zaraii Zavaraki, E. (2026) “A systematic review of technology-enhanced music learning models: Impacts on music education”, Computers and Education Open, 10, 100354. doi:10.1016/j.caeo.2026.100354.</p></li>
+<li><p>Peng, X., Sun, K., Shan, X. and Zhang, J. (2026) “Empowerment or dependency? A systematic review of the impacts of intelligent assessment and generative AI on learners’ self-beliefs and cognitive agency in music education”, Frontiers in Psychology, 17. doi:10.3389/fpsyg.2026.1776445.</p></li>
+<li><p>Ping, X. and De Vera, J.A. (2023) “The Impact of Technology on Music Education”, International Journal of Science and Engineering Applications, 12(11), pp.44–47. doi:10.7753/IJSEA1211.1011.</p></li>
+<li><p>Ruthmann, S.A. and Mantie, R. (eds.) (2017) The Oxford Handbook of Technology and Music Education. Oxford: Oxford University Press. doi:10.1093/oxfordhb/9780199372133.001.0001.</p></li>
+<li><p>National Association for Music Education (n.d.) Journal of Research in Music Education. Available at: nafme.org (Accessed: 28 October 2026).</p></li>
+<li><p>National Association for Music Education (n.d.) Update: Applications of Research in Music Education. Available at: nafme.org (Accessed: 28 October 2026).</p></li>
+<li><p>Oxford University Press (n.d.) Technology in Music Education. Available at: global.oup.com (Accessed: 28 October 2026).</p></li>
+</ol></div><div class="pager"><a class="btn secondary" href="#projects">← Trang trước</a><a class="btn" href="#bai-3">Trang tiếp theo →</a></div></section><section class="page" id="bai-3"><span class="pill">Chương 3</span><h2>Bài 3 · Chương 3: Tổng quan về trí tuệ nhân tạo · Viết Prompt hiệu quả cho các tác vụ học tập</h2><div class="grid2"><div class="panel"><h3>Mục tiêu bài tập</h3><p>So sánh prompt cơ bản, cải tiến và nâng cao cho ba tác vụ: tóm tắt bài báo, giải thích hòa âm chức năng và tạo câu hỏi Nhạc lý.</p></div><div class="panel"><h3>Sản phẩm cuối cùng</h3><p>Prompt nâng cao tạo đầu ra có cấu trúc và dễ kiểm tra hơn. Kết luận: prompt hiệu quả không chỉ dài hơn mà phải có mục tiêu, bối cảnh, nguồn, tiêu chí và định dạng phù hợp.</p><div class="actions"><a class="btn secondary" download="Bai_tap_3_Ta_Uyen_Trang_2.docx" href="downloads/Bai_tap_3_Ta_Uyen_Trang_2.docx" title="Tải bản Word gốc">⬇ Tải file Word</a></div></div></div><h3>Tóm tắt quá trình thực hiện</h3><p>Prompt được phát triển theo Nhiệm vụ, Bối cảnh, Ví dụ, Nhân vật, Định dạng và Giọng điệu; bản nâng cao được rà soát theo G–C–S–E: Goal, Context, Sources và Expectations.</p><div class="notice"><strong>Khó khăn và cách giải quyết:</strong> prompt dễ tạo câu trả lời chung chung hoặc không có nguồn. Giải pháp là đính kèm tài liệu, nêu rõ giới hạn và không cho phép suy diễn ngoài nguồn.</div><h3>Minh chứng so sánh prompt và đầu ra</h3><div class="gallery"><figure><button aria-label="Mở ảnh: So sánh prompt tóm tắt bài báo" class="imgbtn"><img alt="So sánh prompt tóm tắt bài báo" loading="lazy" src="images/image-17.png"/></button><figcaption>So sánh prompt tóm tắt bài báo</figcaption></figure><figure><button aria-label="Mở ảnh: So sánh prompt giải thích hòa âm chức năng" class="imgbtn"><img alt="So sánh prompt giải thích hòa âm chức năng" loading="lazy" src="images/image-18.png"/></button><figcaption>So sánh prompt giải thích hòa âm chức năng</figcaption></figure><figure><button aria-label="Mở ảnh: So sánh prompt tạo câu hỏi ôn tập" class="imgbtn"><img alt="So sánh prompt tạo câu hỏi ôn tập" loading="lazy" src="images/image-19.png"/></button><figcaption>So sánh prompt tạo câu hỏi ôn tập</figcaption></figure></div><p class="ai">Microsoft Copilot là công cụ thử nghiệm. Các ảnh là minh họa mô phỏng phiên thử nghiệm; nội dung chuyên môn cần được kiểm chứng bằng giáo trình hoặc tài liệu nguồn.</p><div class="source-detail"><h3>Nội dung trình bày chi tiết</h3><p class="detail-intro">Phần dưới đây bổ sung đầy đủ nội dung đã thực hiện trong file Word tương ứng, gồm quy trình, công cụ, bảng kết quả, khó khăn, cách xử lý và tự đánh giá.</p><h4><strong>BÀI TẬP 3: THỰC HÀNH VIẾT PROMPT HIỆU QUẢ</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 24%"/>
+<col style="width: 25%"/>
+<col style="width: 24%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>HỌ TÊN</strong></th>
+<th style="text-align: center;"><strong>NGÀNH</strong></th>
+<th style="text-align: center;"><strong>SỞ THÍCH</strong></th>
+<th style="text-align: center;"><strong>CÔNG CỤ THỬ NGHIỆM</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Tạ Uyên Trang</td>
+<td style="text-align: center;">Sư phạm âm nhạc</td>
+<td style="text-align: center;">Đàn, nhảy múa</td>
+<td style="text-align: center;">Microsoft Copilot</td>
+</tr>
+</tbody>
+</table></div><h4><strong>1. Lựa chọn và phân tích 3 tác vụ học tập</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 26%"/>
+<col style="width: 25%"/>
+<col style="width: 24%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>TÁC VỤ</strong></th>
+<th style="text-align: center;"><strong>MỤC TIÊU</strong></th>
+<th style="text-align: center;"><strong>THÁCH THỨC</strong></th>
+<th style="text-align: center;"><strong>TIÊU CHÍ ĐẦU RA TỐT</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tóm tắt bài báo học thuật</td>
+<td style="text-align: left;">Nhanh chóng nắm mục tiêu, phương pháp, kết quả và hàm ý từ bài “The Impact of Technology on Music Education”.</td>
+<td style="text-align: left;">Dễ tạo tóm tắt chung chung; có thể bỏ sót phương pháp, hạn chế, hàm ý nghề nghiệp.</td>
+<td style="text-align: left;">Đúng, đủ, có cấu trúc, nêu hạn chế và hàm ý.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Giải thích khái niệm phức tạp</td>
+<td style="text-align: left;">Hiểu “hòa âm chức năng” ở mức sinh viên năm nhất, gắn với giọng Đô trưởng và hoạt động dạy học.</td>
+<td style="text-align: left;">Khái niệm trừu tượng; cần ví dụ, so sánh, lỗi thường gặp và câu hỏi tự kiểm tra.</td>
+<td style="text-align: left;">Dễ hiểu, chính xác, có ví dụ, so sánh và tự kiểm tra.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tạo bộ câu hỏi ôn tập</td>
+<td style="text-align: left;">Tạo 10 câu Nhạc lý cơ bản để tự học và dùng trong giảng dạy sau này.</td>
+<td style="text-align: left;">Cần cân bằng dạng câu hỏi, độ khó, đáp án, giải thích và tiêu chí chấm.</td>
+<td style="text-align: left;">Đa dạng, phân mức, có đáp án, giải thích và rubric.</td>
+</tr>
+</tbody>
+</table></div><h4><strong>2. Cơ sở thiết kế prompt</strong></h4><p>Tôi áp dụng 6 thành phần: Nhiệm vụ, Bối cảnh, Ví dụ, Nhân vật, Định dạng đầu ra và Giọng điệu. Ba mức prompt được thiết kế có chủ đích: cơ bản chỉ nêu nhiệm vụ; cải tiến bổ sung bối cảnh và cấu trúc; nâng cao kết hợp role prompting, ràng buộc đầu ra, ví dụ/few-shot hoặc tiêu chí tự kiểm tra. Việc thử nghiệm giữ nguyên chủ đề nhằm quan sát tác động của cấu trúc prompt lên chất lượng câu trả lời.</p><p>Ghi chú minh chứng: các ảnh trong báo cáo là ảnh minh họa mô phỏng phiên thử nghiệm trên Microsoft Copilot, dùng để thể hiện trực quan sự khác biệt giữa ba mức prompt.</p><h4><strong>3. Tác vụ 1 – Tóm tắt bài báo học thuật</strong></h4><p>Cơ bản: “Tóm tắt bài báo The Impact of Technology on Music Education.”</p><p>Cải tiến: “Tóm tắt bài báo theo 4 mục: mục tiêu, phương pháp, kết quả chính, kết luận; viết ngắn gọn bằng tiếng Việt.”</p><p>Nâng cao: “Đóng vai chuyên gia nghiên cứu giáo dục âm nhạc; tóm tắt theo 7 mục gồm thông tin chung, mục tiêu, phương pháp, kết quả, ý nghĩa, hạn chế, hàm ý cho giáo viên; trình bày gạch đầu dòng và kết luận ngắn; không bổ sung dữ kiện không có trong tài liệu.”</p><p><strong>Ghi chú cấu trúc prompt nâng cao – G–C–S–E (Tác vụ 1)</strong></p><p><strong>G – Goal (Mục tiêu):</strong> Tóm tắt bài báo học thuật để nắm được nội dung chính và hàm ý cho giáo viên âm nhạc.</p><p><strong>C – Context (Bối cảnh):</strong> Đặt AI vào vai chuyên gia nghiên cứu giáo dục âm nhạc; phục vụ nhu cầu học tập của sinh viên Sư phạm âm nhạc.</p><p><strong>S – Sources (Nguồn dữ liệu):</strong> Bài “The Impact of Technology on Music Education”. Prompt nâng cao hiện nhắc đến “tài liệu” nhưng chưa chỉ rõ cách cung cấp nguồn; khi sử dụng, cần đính kèm hoặc dán toàn văn bài báo. Chỉ dựa vào nội dung được cung cấp; nếu nguồn thiếu thông tin cho một mục, ghi rõ không có thông tin thay vì suy diễn.</p><p><strong>E – Expectations (Kỳ vọng):</strong> Đầu ra bằng tiếng Việt, gồm 7 mục: thông tin chung, mục tiêu, phương pháp, kết quả, ý nghĩa, hạn chế và hàm ý cho giáo viên; trình bày gạch đầu dòng, có kết luận ngắn và không bổ sung dữ kiện ngoài tài liệu. Yêu cầu tiếng Việt kế thừa từ bản cải tiến, nên cần nhắc lại khi dùng riêng bản nâng cao.</p><p>So sánh: bản cơ bản cho cái nhìn nhanh nhưng thiếu cấu trúc. Bản cải tiến giúp tìm thông tin theo mục. Bản nâng cao hiệu quả nhất vì chỉ rõ vai trò, các trường thông tin, đối tượng sử dụng và ràng buộc không suy diễn; nhờ vậy kết quả dễ kiểm tra và hữu ích hơn cho sinh viên Sư phạm âm nhạc.</p><h4><strong>4. Tác vụ 2 – Giải thích khái niệm “hòa âm chức năng”</strong></h4><p>Cơ bản: “Giải thích hòa âm chức năng cho sinh viên năm nhất ngành Sư phạm âm nhạc.”</p><p>Cải tiến: “Đóng vai giảng viên lý thuyết âm nhạc; giải thích có cấu trúc, dùng ví dụ trong giọng Đô trưởng, kèm tiến hành I–IV–V–I.”</p><p>Nâng cao: “Đóng vai giảng viên lý thuyết và phương pháp sư phạm âm nhạc. Giải thích khái niệm, ý nghĩa sư phạm, ví dụ Đô trưởng, so sánh với hòa âm phi chức năng, chỉ ra bốn hiểu lầm thường gặp và tạo năm câu tự kiểm tra kèm đáp án ngắn.”</p><p><strong>Ghi chú cấu trúc prompt nâng cao – G–C–S–E (Tác vụ 2)</strong></p><p><strong>G – Goal (Mục tiêu):</strong> Hiểu khái niệm hòa âm chức năng và ý nghĩa sư phạm; hỗ trợ tự học và chuẩn bị bài giảng.</p><p><strong>C – Context (Bối cảnh):</strong> Đặt AI vào vai giảng viên lý thuyết và phương pháp sư phạm âm nhạc; hướng đến sinh viên năm nhất ngành Sư phạm âm nhạc, sử dụng ví dụ trong giọng Đô trưởng. Đối tượng năm nhất đã có ở bản cơ bản nhưng cần nhắc lại nếu dùng độc lập bản nâng cao.</p><p><strong>S – Sources (Nguồn dữ liệu):</strong> Prompt hiện chưa xác định giáo trình, tài liệu hoặc trích đoạn làm nguồn. Để cấu trúc có đủ thành phần S, khi sử dụng cần cung cấp tài liệu học phần về hòa âm chức năng và yêu cầu AI dựa trên nguồn đó; ghi rõ phần nào chưa có căn cứ trong tài liệu. Đây là yêu cầu bổ sung cho lần sử dụng, không phải nguồn đã được dùng để thử nghiệm.</p><p><strong>E – Expectations (Kỳ vọng):</strong> Trình bày rõ khái niệm, ý nghĩa sư phạm, ví dụ Đô trưởng và so sánh với hòa âm phi chức năng; chỉ ra 4 hiểu lầm thường gặp; tạo 5 câu tự kiểm tra kèm đáp án ngắn. Nội dung cần dễ hiểu, chính xác và phù hợp đối tượng học.</p><p>So sánh: prompt cơ bản dễ tiếp cận nhưng mới dừng ở định nghĩa. Prompt cải tiến tạo cầu nối giữa lý thuyết và ví dụ. Prompt nâng cao tạo một “gói học tập” hoàn chỉnh nhờ role prompting, so sánh đối chiếu, nhận diện hiểu sai và tự kiểm tra. Cấu trúc này phù hợp cả việc tự học lẫn chuẩn bị bài giảng.</p><h4><strong>5. Tác vụ 3 – Tạo bộ câu hỏi ôn tập Nhạc lý cơ bản</strong></h4><p>Cơ bản: “Tạo 10 câu hỏi ôn tập Nhạc lý cơ bản cho sinh viên Sư phạm âm nhạc.”</p><p>Cải tiến: “Tạo 10 câu, gồm trắc nghiệm, điền khuyết và tự luận; trình bày theo nhóm, đánh số rõ ràng.”</p><p>Nâng cao: “Đóng vai chuyên gia Nhạc lý và thiết kế đánh giá. Tạo 10 câu gồm 4 trắc nghiệm, 3 điền khuyết, 2 tự luận, 1 vận dụng; gắn mức dễ/trung bình/khó; có đáp án, giải thích ngắn; cuối cùng lập rubric 4 mức cho câu tự luận và vận dụng.”</p><p><strong>Ghi chú cấu trúc prompt nâng cao – G–C–S–E (Tác vụ 3)</strong></p><p><strong>G – Goal (Mục tiêu):</strong> Tạo bộ 10 câu hỏi ôn tập Nhạc lý cơ bản để tự học và sử dụng trong giảng dạy sau này.</p><p><strong>C – Context (Bối cảnh):</strong> Đặt AI vào vai chuyên gia Nhạc lý và thiết kế đánh giá; phục vụ sinh viên Sư phạm âm nhạc. Tên học phần và đối tượng được nêu ở bản cơ bản, nên cần nhắc lại khi dùng riêng bản nâng cao.</p><p><strong>S – Sources (Nguồn dữ liệu):</strong> Prompt hiện chưa nêu nguồn kiến thức hoặc phạm vi bài học cụ thể. Để bổ sung thành phần S khi sử dụng, cần cung cấp giáo trình, đề cương hoặc nội dung Nhạc lý cơ bản đã học và yêu cầu câu hỏi, đáp án, giải thích bám sát tài liệu đó; không đưa nội dung ngoài phạm vi được cung cấp. Chưa có tài liệu nguồn cụ thể được xác định trong prompt hiện tại.</p><p><strong>E – Expectations (Kỳ vọng):</strong> Tạo đúng 10 câu: 4 trắc nghiệm, 3 điền khuyết, 2 tự luận và 1 vận dụng; gắn mức dễ/trung bình/khó, có đáp án và giải thích ngắn; cuối bộ câu hỏi có rubric 4 mức cho câu tự luận và vận dụng. Trình bày theo nhóm, đánh số rõ ràng là yêu cầu kế thừa từ bản cải tiến, nên cần nhắc lại khi dùng độc lập.</p><p><strong><br/>
+</strong></p><h4><strong>6. Phân tích hiệu quả và nguyên tắc rút ra</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Mức prompt</strong></th>
+<th style="text-align: left;"><strong>Đặc điểm kết quả</strong></th>
+<th style="text-align: left;"><strong>Nhận định</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Cơ bản</td>
+<td style="text-align: left;">Nhanh, đúng trọng tâm tối thiểu nhưng chung chung.</td>
+<td style="text-align: left;">Dùng khi khám phá ý tưởng hoặc nhiệm vụ đơn giản.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cải tiến</td>
+<td style="text-align: left;">Có bối cảnh, cấu trúc và phạm vi rõ.</td>
+<td style="text-align: left;">Phù hợp đa số tác vụ học tập thường ngày.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nâng cao</td>
+<td style="text-align: left;">Có vai trò, tiêu chí, ví dụ/đối chiếu, định dạng, kiểm tra.</td>
+<td style="text-align: left;">Cho đầu ra ổn định, kiểm chứng được và dùng lại trong giảng dạy.</td>
+</tr>
+</tbody>
+</table></div><p>Nguyên tắc tổng hợp:</p><p>(1) bắt đầu bằng động từ rõ;</p><p>(2) nêu bối cảnh, đối tượng và mục tiêu;</p><p>(3) chia nhiệm vụ thành các phần;</p><p>(4) quy định định dạng, độ dài và tiêu chí chất lượng;</p><p>(5) dùng role prompting khi cần góc nhìn chuyên môn;</p><p>(6) cung cấp ví dụ khi cần mẫu nhất quán;</p><p>(7) yêu cầu AI tự kiểm tra tính đầy đủ, nhưng người học vẫn phải kiểm chứng nội dung chuyên môn;</p><p>(8) thử nghiệm, so sánh và tinh chỉnh prompt theo đầu ra thực tế.</p><p><strong>Kết luận: prompt hiệu quả không đơn thuần là prompt dài hơn. Chất lượng đến từ thông tin đúng chỗ: mục tiêu, bối cảnh, tiêu chí và định dạng. Với ngành Sư phạm âm nhạc, prompt nâng cao giúp biến AI từ công cụ trả lời thành trợ lý hỗ trợ thiết kế bài học, nhưng vai trò thẩm định chuyên môn, cảm thụ và quyết định sư phạm vẫn thuộc về giáo viên.</strong></p></div><div class="pager"><a class="btn secondary" href="#projects">← Trang trước</a><a class="btn" href="#bai-4">Trang tiếp theo →</a></div></section><section class="page" id="bai-4"><span class="pill">Chương 4</span><h2>Bài 4 · Chương 4: Giao tiếp và hợp tác trong môi trường số · Sử dụng công cụ hợp tác trực tuyến cho dự án nhóm</h2><div class="grid2"><div class="panel"><h3>Mục tiêu bài tập</h3><p>Tổ chức cuộc họp trực tuyến và quản lý dự án “Âm nhạc số cho lớp học vui”. Nhóm có một thành viên nên Tạ Uyên Trang tự phân công vai trò.</p></div><div class="panel"><h3>Sản phẩm cuối cùng</h3><p>Đã hoàn thành kế hoạch họp, agenda, biên bản, danh sách quyết định, nhiệm vụ và bảng Trello minh họa. Các hình dưới đây được ghi rõ là minh họa mô phỏng, không được coi là ảnh chụp cuộc họp hoặc bảng Trello thực tế.</p><div class="actions"><a class="btn secondary" download="Bai_tap_4_Ta_Uyen_Trang.docx" href="downloads/Bai_tap_4_Ta_Uyen_Trang.docx" title="Tải bản Word gốc">⬇ Tải file Word</a></div></div></div><h3>Tóm tắt quá trình thực hiện</h3><p>Microsoft Teams được dùng để lập agenda 25 phút và chia sẻ nội dung; Trello dùng theo dõi dự án hai tuần. Các vai trò gồm điều phối, trình bày, thư ký, kỹ thuật và quản lý dự án.</p><div class="notice"><strong>Khó khăn và cách giải quyết:</strong> một thành viên kiêm nhiều vai trò. Giải pháp là phân vai theo từng thời điểm, chuẩn bị mẫu biên bản và tự phản biện sau mỗi đề xuất.</div><h3>Minh chứng kế hoạch và phối hợp trực tuyến</h3><div class="gallery"><figure><button aria-label="Mở ảnh: Kế hoạch cuộc họp trực tuyến 25 phút" class="imgbtn"><img alt="Kế hoạch cuộc họp trực tuyến 25 phút" loading="lazy" src="images/image-20.png"/></button><figcaption>Kế hoạch cuộc họp trực tuyến 25 phút</figcaption></figure><figure><button aria-label="Mở ảnh: Minh họa giao diện cuộc họp Microsoft Teams" class="imgbtn"><img alt="Bảng Trello quản lý dự án cá nhân" loading="lazy" src="images/image-21.png"/></button><figcaption>Hình 2. Bảng Trello quản lý dự án cá nhân với bốn cột và các nhiệm vụ do Tạ Uyên Trang phụ trách.</figcaption></figure></div><p class="ai">AI tạo hình hỗ trợ tạo minh họa kế hoạch, giao diện Teams và bảng Trello; sinh viên xác định nội dung, quyết định và tự phân công công việc.</p><div class="source-detail"><h3>Nội dung trình bày chi tiết</h3><p class="detail-intro">Phần dưới đây bổ sung đầy đủ nội dung đã thực hiện trong file Word tương ứng, gồm quy trình, công cụ, bảng kết quả, khó khăn, cách xử lý và tự đánh giá.</p><h4><strong>BÀI TẬP 4<br/>
+TỔ CHỨC CUỘC HỌP TRỰC TUYẾN CHUYÊN NGHIỆP</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Họ tên</strong></th>
+<th style="text-align: left;"><strong>Ngành</strong></th>
+<th style="text-align: left;"><strong>Hình thức nhóm</strong></th>
+<th style="text-align: left;"><strong>Nền tảng</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tạ Uyên Trang</td>
+<td style="text-align: left;">Sư phạm âm nhạc</td>
+<td style="text-align: left;">Đồ án cá nhân, 01 thành viên</td>
+<td style="text-align: left;">Microsoft Teams</td>
+</tr>
+</tbody>
+</table></div><h4><strong>1. Ý tưởng đồ án và mục tiêu cuộc họp</strong></h4><p>Tên đồ án: “Âm nhạc số cho lớp học vui”. Đây là dự án thiết kế một hoạt động học âm nhạc 20–30 phút dành cho học sinh lớp 6, kết hợp tiết tấu cơ thể, trò chơi nghe đoán nhạc cụ và học liệu số. Ý tưởng phù hợp với định hướng trở thành giáo viên âm nhạc có khả năng ứng dụng công nghệ, đồng thời khai thác sở thích đàn và nhảy múa của Tạ Uyên Trang.</p><p>Mục tiêu cuộc họp:</p><p>(1) xác định vấn đề và đối tượng người học;</p><p>(2) thống nhất cấu trúc hoạt động;</p><p>(3) lựa chọn công cụ số và tài liệu;</p><p>(4) tự phân công nhiệm vụ;</p><p>(5) chốt mốc hoàn thành trong hai tuần. Vì nhóm chỉ có một thành viên, cuộc họp được tổ chức như một phiên lập kế hoạch và tự phản biện có ghi hình, trong đó Tạ Uyên Trang lần lượt thực hiện các vai trò điều phối, thư ký và người trình bày.</p><h4><strong>2. Lý do chọn Microsoft Teams</strong></h4><p>Microsoft Teams được chọn vì có thể tạo cuộc họp, chia sẻ màn hình, ghi chú, ghi hình khi tài khoản cho phép và lưu tài liệu dự án trong cùng một môi trường. Phương án dự phòng là quay màn hình bằng công cụ có sẵn trên máy nếu tài khoản không cho phép ghi cuộc họp. Trước khi ghi, Tạ Uyên Trang tự xác nhận đồng ý ghi hình và không đưa dữ liệu cá nhân nhạy cảm vào màn hình chia sẻ.</p><h4><strong>3. Phân công toàn bộ vai trò cho Tạ Uyên Trang</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Vai trò</strong></th>
+<th style="text-align: left;"><strong>Nhiệm vụ trước và trong cuộc họp</strong></th>
+<th style="text-align: left;"><strong>Sản phẩm</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Người điều phối</td>
+<td style="text-align: left;">Tạo lịch, chuẩn bị agenda, kiểm soát thời gian, chuyển nội dung đúng mốc.</td>
+<td style="text-align: left;">Kế hoạch họp 25 phút</td>
+</tr>
+<tr>
+<td style="text-align: left;">Người trình bày</td>
+<td style="text-align: left;">Trình bày vấn đề, ý tưởng hoạt động, công cụ số và phương án triển khai.</td>
+<td style="text-align: left;">Slide chia sẻ màn hình</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thư ký</td>
+<td style="text-align: left;">Ghi quyết định, nhiệm vụ, thời hạn; lập biên bản sau cuộc họp.</td>
+<td style="text-align: left;">Biên bản và danh sách việc</td>
+</tr>
+<tr>
+<td style="text-align: left;">Phụ trách kỹ thuật</td>
+<td style="text-align: left;">Kiểm tra camera, micro, âm thanh chia sẻ, mạng, bản ghi và quyền riêng tư.</td>
+<td style="text-align: left;">Checklist kỹ thuật</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quản lý dự án</td>
+<td style="text-align: left;">Đưa nhiệm vụ lên Trello, theo dõi tiến độ, tự đánh giá và chỉnh sửa.</td>
+<td style="text-align: left;">Bảng Trello 2 tuần</td>
+</tr>
+</tbody>
+</table></div><h4><strong>4. Tài liệu chuẩn bị</strong></h4><p>Đề cương dự án; slide 5 phần; các đoạn âm thanh nhạc cụ; video/ảnh minh họa tiết tấu cơ thể; danh sách công cụ dự kiến gồm Microsoft Teams, PowerPoint, Chrome Music Lab, Canva, Kahoot! Hoặc Microsoft Forms; bảng Trello; mẫu biên bản; đồng hồ bấm giờ; tai nghe và đường truyền dự phòng.</p><h4><strong>5. Kế hoạch và chương trình cuộc họp trực tuyến</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Thời gian</strong></th>
+<th style="text-align: left;"><strong>Nội dung</strong></th>
+<th style="text-align: left;"><strong>Hoạt động của Tạ Uyên Trang</strong></th>
+<th style="text-align: left;"><strong>Kết quả cần đạt</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">0–3 phút</td>
+<td style="text-align: left;">Khai mạc</td>
+<td style="text-align: left;">Bật ghi hình sau khi xác nhận đồng ý; nêu mục tiêu, quy tắc và agenda.</td>
+<td style="text-align: left;">Phiên họp có phạm vi rõ ràng.</td>
+</tr>
+<tr>
+<td style="text-align: left;">3–8 phút</td>
+<td style="text-align: left;">Vấn đề và người học</td>
+<td style="text-align: left;">Phân tích học sinh lớp 6, nhu cầu vận động, nghe và tương tác.</td>
+<td style="text-align: left;">Chốt đối tượng và nhu cầu.</td>
+</tr>
+<tr>
+<td style="text-align: left;">8–15 phút</td>
+<td style="text-align: left;">Thiết kế hoạt động</td>
+<td style="text-align: left;">Trình bày tiết tấu cơ thể và trò chơi nghe đoán nhạc cụ; tự đặt câu hỏi phản biện.</td>
+<td style="text-align: left;">Chốt cấu trúc hoạt động.</td>
+</tr>
+<tr>
+<td style="text-align: left;">15–21 phút</td>
+<td style="text-align: left;">Công nghệ và học liệu</td>
+<td style="text-align: left;">So sánh công cụ, xác định slide, audio, video, trò chơi và phương án dự phòng.</td>
+<td style="text-align: left;">Danh sách công cụ và tài liệu.</td>
+</tr>
+<tr>
+<td style="text-align: left;">21–25 phút</td>
+<td style="text-align: left;">Quyết định và bước tiếp theo</td>
+<td style="text-align: left;">Tóm tắt quyết định, tự phân công, ghi hạn hoàn thành và tiêu chí đánh giá.</td>
+<td style="text-align: left;">Danh sách nhiệm vụ có thời hạn.</td>
+</tr>
+</tbody>
+</table></div><p>Kịch bản tự phản biện trong cuộc họp: Sau mỗi đề xuất, Tạ Uyên Trang dừng 20–30 giây và trả lời ba câu hỏi: Hoạt động này phục vụ mục tiêu âm nhạc nào? Học sinh thực sự làm gì? Nếu công nghệ gặp lỗi thì phương án thay thế là gì? Cách này giúp phiên họp cá nhân vẫn có chiều sâu thay vì chỉ đọc nội dung đã chuẩn bị.</p><h4><strong>6. Checklist kỹ thuật trước khi bắt đầu</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Mốc</strong></th>
+<th style="text-align: left;"><strong>Việc kiểm tra</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Trước 24 giờ</td>
+<td style="text-align: left;">Hoàn thiện slide, audio, agenda; đặt tên file thống nhất; sao lưu lên OneDrive và USB.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Trước 30 phút</td>
+<td style="text-align: left;">Kiểm tra mạng, pin, tai nghe, micro, chế độ không làm phiền, quyền chia sẻ màn hình.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Trước 10 phút</td>
+<td style="text-align: left;">Mở sẵn slide và Trello; đóng cửa sổ riêng tư; thử chia sẻ âm thanh máy tính.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khi bắt đầu</td>
+<td style="text-align: left;">Nêu việc ghi hình, tự xác nhận đồng ý, bật ghi, kiểm tra bộ đếm thời gian.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Khi kết thúc</td>
+<td style="text-align: left;">Dừng ghi, kiểm tra file, lưu biên bản và cập nhật Trello.</td>
+</tr>
+</tbody>
+</table></div><h4><strong>8. Biên bản cuộc họp</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Thông tin</strong></th>
+<th style="text-align: left;"><strong>Nội dung</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tên cuộc họp</td>
+<td style="text-align: left;">Lập kế hoạch dự án “Âm nhạc số cho lớp học vui”</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thành viên</td>
+<td style="text-align: left;">Tạ Uyên Trang</td>
+</tr>
+<tr>
+<td style="text-align: left;">Thời lượng</td>
+<td style="text-align: left;">25 phút, họp trực tuyến trên Microsoft Teams</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mục tiêu</td>
+<td style="text-align: left;">Hoàn thiện ý tưởng, thống nhất hoạt động, công cụ, tài liệu và kế hoạch triển khai.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quyết định 1</td>
+<td style="text-align: left;">Đối tượng: học sinh lớp 6; hoạt động dài 20–30 phút.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quyết định 2</td>
+<td style="text-align: left;">Hai hoạt động chính: tiết tấu cơ thể và nghe đoán nhạc cụ.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quyết định 3</td>
+<td style="text-align: left;">Công cụ chính: Teams + PowerPoint; công cụ tương tác ưu tiên Kahoot!/Forms; có bản offline.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quyết định 4</td>
+<td style="text-align: left;">Dự án thực hiện trong 2 tuần; thử nghiệm 10 phút trước khi hoàn thiện.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bản ghi</td>
+<td style="text-align: left;">Chưa có đường dẫn thực tế. Sinh viên bổ sung sau khi tổ chức và tải bản ghi lên OneDrive/Teams.</td>
+</tr>
+</tbody>
+</table></div><h4><strong>9. Các quyết định và nhiệm vụ tiếp theo</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>STT</strong></th>
+<th style="text-align: center;"><strong>CÔNG VIỆC TẠ UYÊN TRANG TỰ PHÂN CÔNG</strong></th>
+<th style="text-align: center;"><strong>THỜI HẠN</strong></th>
+<th style="text-align: center;"><strong>TIÊU CHÍ HOÀN THÀNH</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Xác định đặc điểm và nhu cầu học sinh lớp 6</td>
+<td style="text-align: left;">Ngày 1</td>
+<td style="text-align: left;">01 trang ghi chú, có 3 nhu cầu học tập.</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Thiết kế hoạt động tiết tấu cơ thể</td>
+<td style="text-align: left;">Ngày 2–3</td>
+<td style="text-align: left;">Kịch bản 7 phút, có nhịp mẫu và chỉ dẫn.</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Tạo trò chơi nghe đoán nhạc cụ</td>
+<td style="text-align: left;">Ngày 4–5</td>
+<td style="text-align: left;">Tối thiểu 6 âm thanh, có đáp án.</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Chuẩn bị slide, audio và video</td>
+<td style="text-align: left;">Ngày 6–8</td>
+<td style="text-align: left;">Slide dễ đọc; âm thanh rõ; file đặt tên thống nhất.</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Tạo trò chơi Kahoot!/Forms và bản giấy dự phòng</td>
+<td style="text-align: left;">Ngày 9</td>
+<td style="text-align: left;">Có ít nhất 8 câu và đáp án.</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Chạy thử 10 phút, ghi lỗi kỹ thuật và thời lượng</td>
+<td style="text-align: left;">Ngày 10</td>
+<td style="text-align: left;">Checklist hoàn thành, không lỗi nghiêm trọng.</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">Chỉnh sửa và hoàn thiện dự án</td>
+<td style="text-align: left;">Ngày 11–12</td>
+<td style="text-align: left;">Đáp ứng mục tiêu, tổng thời lượng 20–30 phút.</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">Tổ chức phiên trình bày, lưu bản ghi và biên bản</td>
+<td style="text-align: left;">Ngày 13–14</td>
+<td style="text-align: left;">Có video/link, biên bản, slide và bảng Trello.</td>
+</tr>
+</tbody>
+</table></div><h4><strong>10. Quản lý dự án trên Trello</strong></h4><p>Bảng Trello gồm bốn cột: Ý tưởng, Cần thực hiện, Đang thực hiện và Hoàn thành. Mỗi thẻ đều được giao cho Tạ Uyên Trang, có mô tả, nhãn, checklist và hạn hoàn thành. Cách quản lý này thể hiện rõ tính tự chủ của đồ án cá nhân và giúp phát hiện công việc chậm tiến độ.</p><h4><strong>11. Đánh giá hiệu quả cuộc họp</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Tiêu chí</strong></th>
+<th style="text-align: left;"><strong>Tự đánh giá</strong></th>
+<th style="text-align: left;"><strong>Minh chứng/nhận xét</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Mục tiêu và agenda</td>
+<td style="text-align: left;">Đạt</td>
+<td style="text-align: left;">Năm nội dung được xử lý theo trình tự; có quyết định cuối mỗi phần.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Quản lý thời gian</td>
+<td style="text-align: left;">Đạt</td>
+<td style="text-align: left;">Tổng 25 phút; phần thiết kế hoạt động được ưu tiên 7 phút.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tính chuyên nghiệp</td>
+<td style="text-align: left;">Đạt</td>
+<td style="text-align: left;">Có agenda, slide, ghi chú, kiểm tra kỹ thuật và biên bản.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chất lượng quyết định</td>
+<td style="text-align: left;">Khá</td>
+<td style="text-align: left;">Đã chốt đối tượng, hoạt động, công cụ và lịch; cần kiểm chứng thực tế với học sinh.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Phối hợp nhóm</td>
+<td style="text-align: left;">Điều chỉnh theo nhóm 1 người</td>
+<td style="text-align: left;">Một thành viên kiêm nhiệm toàn bộ vai trò; dùng tự phản biện để hạn chế góc nhìn một chiều.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Minh chứng</td>
+<td style="text-align: left;">Cần bổ sung</td>
+<td style="text-align: left;">Phải bổ sung ảnh chụp thật và đường dẫn bản ghi sau khi thực hiện.</td>
+</tr>
+</tbody>
+</table></div><h4><strong>12. Bài học kinh nghiệm và đề xuất cải thiện</strong></h4><p>Thứ nhất, cuộc họp cá nhân vẫn cần agenda, giới hạn thời gian và sản phẩm đầu ra rõ ràng. Thứ hai, việc kiêm nhiều vai trò dễ dẫn đến vừa trình bày vừa ghi chép thiếu tập trung; giải pháp là chuẩn bị mẫu biên bản trước và dành 30 giây cuối mỗi mục để ghi quyết định. Thứ ba, minh chứng kỹ thuật phải được kiểm tra ngay sau cuộc họp để tránh mất bản ghi. Thứ tư, AI và công cụ số có thể hỗ trợ thiết kế, nhưng nội dung âm nhạc, mức độ phù hợp với học sinh và quyết định sư phạm phải do Tạ Uyên Trang kiểm chứng.</p><p>Đề xuất cho lần sau: mời một bạn học hoặc giảng viên tham gia 5 phút cuối để phản biện; thử nghiệm hoạt động với 3–5 người học; dùng biểu mẫu Microsoft Forms ngắn gồm 5 câu để thu phản hồi; điều chỉnh thời lượng nếu phần chuyển audio hoặc trò chơi mất quá 1 phút; chuẩn bị bản giấy và loa dự phòng.</p><h4><strong>13. Danh mục sản phẩm nộp kèm</strong></h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Sản phẩm</strong></th>
+<th style="text-align: left;"><strong>Trạng thái</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Báo cáo nhóm 4–5 trang</td>
+<td style="text-align: left;">Đã hoàn thành trong tài liệu này.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kế hoạch cuộc họp và agenda</td>
+<td style="text-align: left;">Đã có; thể hiện ở phần 5 và Hình 1.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Biên bản, quyết định và nhiệm vụ</td>
+<td style="text-align: left;">Đã có; thể hiện ở phần 8–9.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Đánh giá và bài học kinh nghiệm</td>
+<td style="text-align: left;">Đã có; thể hiện ở phần 11–12.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bảng Trello dự án</td>
+<td style="text-align: left;">Đã thiết kế minh họa; cần tạo bảng thực tế nếu hệ thống nộp yêu cầu liên kết.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Đường dẫn bản ghi cuộc họp</td>
+<td style="text-align: left;">Chưa có; Tạ Uyên Trang bổ sung sau khi quay phiên họp thực tế.</td>
+</tr>
+</tbody>
+</table></div><h4><strong>Kết luận</strong></h4><p><strong>Dự án “Âm nhạc số cho lớp học vui” cho phép em luyện đồng thời năng lực tổ chức cuộc họp, quản lý dự án, trình bày học thuật và thiết kế hoạt động dạy học âm nhạc có công nghệ. Việc nhóm chỉ có một thành viên phụ trách được xử lý bằng cách phân vai rõ ràng, sử dụng kịch bản tự phản biện và tạo đầy đủ kế hoạch, biên bản, nhiệm vụ, tự đánh giá và minh chứng.</strong></p></div><div class="pager"><a class="btn secondary" href="#projects">← Trang trước</a><a class="btn" href="#bai-5">Trang tiếp theo →</a></div></section><section class="page" id="bai-5"><span class="pill">Chương 5</span><h2>Bài 5 · Chương 5: Sáng tạo nội dung số · Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung</h2><div class="grid2"><div class="panel"><h3>Mục tiêu bài tập</h3><p>Thiết kế học liệu “Nhịp điệu quanh em” cho học sinh lớp 6 nhằm nhận biết phách mạnh – nhẹ trong nhịp 4/4, phối hợp vận động và sáng tạo tiết tấu.</p></div><div class="panel"><h3>Sản phẩm cuối cùng</h3><p>Sản phẩm gồm poster, bốn câu lời nhịp có hợp âm, kịch bản 20 phút và bảng phân định AI thực hiện gì, sinh viên thực hiện gì.</p><div class="actions"><a class="btn secondary" download="Bai_5_Ta_Uyen_Trang.docx" href="downloads/Bai_5_Ta_Uyen_Trang.docx" title="Tải bản Word gốc">⬇ Tải file Word</a></div></div></div><h3>Tóm tắt quá trình thực hiện</h3><p>AI gợi ý hoạt động, tạo bản nháp lời nhịp và hình minh họa. Sinh viên chọn cấu trúc nghe – vận động – sáng tạo – chia sẻ; chỉnh lời, chọn vòng hợp âm C – Am – F – G và tốc độ 92 BPM.</p><div class="notice"><strong>Khó khăn và cách giải quyết:</strong> hình AI có thể sai chi tiết nhạc cụ hoặc tạo hình lý tưởng hóa. Hình không được dùng để dạy kỹ thuật ngón và phải kiểm tra trước khi dạy.</div><h3>Sản phẩm nội dung số</h3><div class="gallery"><figure><button aria-label="Mở ảnh: Poster “Nhịp điệu quanh em” – sản phẩm có AI hỗ trợ" class="imgbtn"><img alt="Poster “Nhịp điệu quanh em” – sản phẩm có AI hỗ trợ" loading="lazy" src="images/image-22.jpg"/></button><figcaption>Poster “Nhịp điệu quanh em” – sản phẩm có AI hỗ trợ</figcaption></figure></div><p class="ai">AI tạo sinh hỗ trợ bản nháp và hình minh họa; toàn bộ mục tiêu, lựa chọn sư phạm, chỉnh sửa và quyết định công bố do Tạ Uyên Trang thực hiện.</p><div class="source-detail"><h3>Nội dung trình bày chi tiết</h3><p class="detail-intro">Phần dưới đây bổ sung đầy đủ nội dung đã thực hiện trong file Word tương ứng, gồm quy trình, công cụ, bảng kết quả, khó khăn, cách xử lý và tự đánh giá.</p><p><strong>TRƯỜNG ĐẠI HỌC SƯ PHẠM NGHỆ THUẬT TRUNG ƯƠNG<br/>
+KHOA GIÁO DỤC ĐẠI CƯƠNG</strong></p><h4><strong>BÀI TẬP 5</strong></h4><p><em>Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung</em></p><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 35%"/>
+<col style="width: 64%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Họ và tên</strong></th>
+<th>Tạ Uyên Trang</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ngành</strong></td>
+<td>Sư phạm Âm nhạc</td>
+</tr>
+<tr>
+<td><strong>Mã sinh viên</strong></td>
+<td>2552210049</td>
+</tr>
+<tr>
+<td><strong>Lớp</strong></td>
+<td>K20A SPAN</td>
+</tr>
+<tr>
+<td><strong>Giảng viên hướng dẫn</strong></td>
+<td>GV. Vũ Việt Hoàng</td>
+</tr>
+</tbody>
+</table></div><p>Hà Nội, 2026</p><h4>1. Mục tiêu và ý tưởng sản phẩm</h4><p>Sản phẩm này là phần triển khai tiếp nối Bài tập nhóm 9 với chủ đề “AI có thay thế giáo viên âm nhạc trong tương lai?”. Trong nhóm, tôi phụ trách tìm hiểu công cụ NotebookLM và đóng vai Bạn 2 ở phần 3 của kịch bản. Từ đó, tôi thiết kế học liệu số “Nhịp điệu quanh em” dành cho học sinh lớp 6, thể hiện quan điểm AI là trợ lý hỗ trợ giáo viên chứ không thay thế giáo viên. Sản phẩm gồm poster hoạt động, lời nhịp ngắn, vòng hợp âm và kịch bản tổ chức 20 phút. Mục tiêu là giúp học sinh nhận biết phách mạnh - nhẹ trong nhịp 4/4, phối hợp vận động cơ thể và tạo một mẫu tiết tấu ngắn.</p><h4>2. Prompt và quy trình sáng tạo</h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Giai đoạn</strong></th>
+<th><strong>Prompt/chỉ dẫn chính</strong></th>
+<th><strong>Quyết định của sinh viên</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ý tưởng</td>
+<td>Dùng NotebookLM tổng hợp tư liệu từ báo cáo nhóm 9; đóng vai giáo viên Âm nhạc THCS, đề xuất hoạt động 20 phút về nhịp 4/4, vui, ít thiết bị.</td>
+<td>Chọn cấu trúc nghe - vận động - sáng tạo - chia sẻ; giữ giáo viên là người dẫn dắt chính.</td>
+</tr>
+<tr>
+<td>Nội dung</td>
+<td>Viết lời nhịp 4 câu, từ ngữ đơn giản, mỗi câu dễ đọc theo phách; gợi ý vòng hợp âm cơ bản và đối chiếu với tư liệu đã nạp vào NotebookLM.</td>
+<td>Rút gọn lời, chọn C - Am - F - G, tốc độ 92 BPM.</td>
+</tr>
+<tr>
+<td>Hình ảnh</td>
+<td>Minh họa lớp học âm nhạc Việt Nam, giáo viên hướng dẫn body percussion; không chữ, không logo.</td>
+<td>Kiểm tra bối cảnh, nhạc cụ; chọn vùng ảnh phù hợp để dàn trang.</td>
+</tr>
+<tr>
+<td>Biên tập</td>
+<td>Rà soát tính phù hợp lớp 6, khả năng đọc, thời lượng, rủi ro bản quyền, định kiến và độ chính xác của nội dung so với nguồn.</td>
+<td>Thêm nhãn AI, chỉnh bố cục, không dùng ảnh để dạy kỹ thuật ngón; kiểm tra lại các ý do AI tóm tắt.</td>
+</tr>
+</tbody>
+</table></div><p>Công cụ AI (NotebookLM và công cụ tạo ảnh) hỗ trợ tổng hợp tư liệu, tạo bản nháp và hình minh họa; toàn bộ mục tiêu, lựa chọn sư phạm, chỉnh sửa và quyết định công bố do Tạ Uyên Trang thực hiện. Prompt và phiên bản đã sửa cần được lưu để có thể giải trình.</p><h4>3. Sản phẩm số hoàn thiện</h4><h5>Lời nhịp và hợp âm gợi ý</h5><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Ô nhịp</strong></th>
+<th><strong>Lời</strong></th>
+<th><strong>Hợp âm</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Nghe nhịp vang quanh em</td>
+<td>C</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Một - hai - ba - bốn đều</td>
+<td>Am</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Tay vỗ theo câu hát</td>
+<td>F</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Cùng nhau ta bước đều</td>
+<td>G</td>
+</tr>
+</tbody>
+</table></div><h4>4. Kịch bản sử dụng trong lớp</h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+<col style="width: 25%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Thời gian</strong></th>
+<th><strong>Hoạt động của giáo viên</strong></th>
+<th><strong>Hoạt động của học sinh</strong></th>
+<th><strong>Minh chứng</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0-3 phút</td>
+<td>Gõ mẫu 4 phách, nhấn phách 1.</td>
+<td>Nghe và chỉ ra phách mạnh.</td>
+<td>Trả lời miệng.</td>
+</tr>
+<tr>
+<td>3-8 phút</td>
+<td>Hướng dẫn vỗ tay - dậm chân - búng tay.</td>
+<td>Thực hiện theo nhóm và đổi vai dẫn.</td>
+<td>Mẫu tiết tấu đúng nhịp.</td>
+</tr>
+<tr>
+<td>8-15 phút</td>
+<td>Cho thẻ tiết tấu, gợi ý ghép 4 ô.</td>
+<td>Sáng tạo mẫu 4/4, luyện 2 lần.</td>
+<td>Phiếu/thẻ của nhóm.</td>
+</tr>
+<tr>
+<td>15-19 phút</td>
+<td>Mời biểu diễn; phản hồi theo 2 tiêu chí.</td>
+<td>Biểu diễn và góp ý “đúng nhịp - phối hợp”.</td>
+<td>Quan sát/rubric.</td>
+</tr>
+<tr>
+<td>19-20 phút</td>
+<td>Chốt kiến thức, hỏi một câu thoát lớp.</td>
+<td>Nêu một điều đã hiểu.</td>
+<td>Exit ticket.</td>
+</tr>
+</tbody>
+</table></div><h4>5. Đánh giá sản phẩm và rủi ro</h4><ul>
+<li><p>Tính sư phạm: mục tiêu đo được, thời lượng ngắn, có vận động và sáng tạo.</p></li>
+<li><p>Tính thẩm mỹ: tương phản rõ, thông tin theo thứ tự hành động, hình minh họa hỗ trợ cảm xúc.</p></li>
+<li><p>Giới hạn: hình AI có thể sai chi tiết nhạc cụ hoặc tạo hình lý tưởng hóa; cần kiểm tra trước khi dạy.</p></li>
+<li><p>Vai trò của giáo viên: như kết luận của bài tập nhóm, AI hỗ trợ tạo học liệu nhanh nhưng không thay được việc quan sát, uốn nắn và truyền cảm hứng trực tiếp trong lớp học âm nhạc.</p></li>
+<li><p>Bản quyền và minh bạch: ghi rõ “có sử dụng AI tạo sinh”, không nhận hình AI là ảnh chụp thực tế, không dùng dữ liệu cá nhân của học sinh.</p></li>
+</ul><h4>6. Tự đánh giá và công bố việc sử dụng AI</h4><p>Qua bài tập nhóm 9 và việc dùng NotebookLM, tôi thấy AI giúp mở rộng ý tưởng, tổng hợp tư liệu và tạo nhanh nhiều phương án hình ảnh, nhưng không thay thế việc xác định mục tiêu dạy học. Tôi đã loại bỏ các gợi ý quá phức tạp, rút gọn lời nhịp và bổ sung hoạt động đánh giá. Nếu dùng sản phẩm trong lớp thật, tôi sẽ thử với một nhóm nhỏ, quan sát khả năng theo nhịp và điều chỉnh tốc độ.</p><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Nội dung</strong></th>
+<th><strong>AI thực hiện</strong></th>
+<th><strong>Tạ Uyên Trang thực hiện</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ý tưởng</td>
+<td>Đề xuất phương án ban đầu.</td>
+<td>Chọn chủ đề, mục tiêu và liên hệ với chủ đề nhóm 9.</td>
+</tr>
+<tr>
+<td>Lời nhịp</td>
+<td>Tạo bản nháp.</td>
+<td>Sửa từ, phách, hợp âm; đối chiếu nguồn.</td>
+</tr>
+<tr>
+<td>Hình ảnh</td>
+<td>Tạo bản nháp, tóm tắt tư liệu.</td>
+<td>Chọn, cắt và dàn trang.</td>
+</tr>
+<tr>
+<td>Kiểm định</td>
+<td>Gợi ý checklist.</td>
+<td>Kiểm tra, chịu trách nhiệm cuối cùng.</td>
+</tr>
+</tbody>
+</table></div><h5>Cam kết</h5><p>Tôi công bố trung thực phạm vi AI hỗ trợ; không nhập thông tin nhạy cảm; kiểm tra nội dung chuyên môn và tôn trọng quy định của môn học. Sản phẩm chỉ được dùng sau khi giáo viên chịu trách nhiệm xác nhận mức phù hợp với học sinh.</p></div><div class="pager"><a class="btn secondary" href="#projects">← Trang trước</a><a class="btn" href="#bai-6">Trang tiếp theo →</a></div></section><section class="page" id="bai-6"><span class="pill">Chương 6</span><h2>Bài 6 · Chương 6: An toàn và liêm chính học thuật · Sử dụng AI có trách nhiệm trong học tập và nghiên cứu</h2><div class="grid2"><div class="panel"><h3>Mục tiêu bài tập</h3><p>Chuyển các hướng dẫn quốc tế thành bộ quy tắc hành động cá nhân phù hợp với sinh viên Sư phạm âm nhạc.</p></div><div class="panel"><h3>Sản phẩm cuối cùng</h3><p>Bộ 10 nguyên tắc, checklist kiểm soát và tuyên bố cá nhân: AI là công cụ hỗ trợ, không thay thế phán đoán sư phạm và trách nhiệm nghề nghiệp.</p><div class="actions"><a class="btn secondary" download="Bai_6_Ta_Uyen_Trang.docx" href="downloads/Bai_6_Ta_Uyen_Trang.docx" title="Tải bản Word gốc">⬇ Tải file Word</a></div></div></div><h3>Tóm tắt quá trình thực hiện</h3><p>Đối chiếu UNESCO, NIST AI RMF, OECD AI Principles và Microsoft Responsible AI Standard. Sau đó áp dụng vào bốn tình huống: giáo án, hình nhạc cụ, nhận xét giọng hát và bài nghiên cứu.</p><div class="notice"><strong>Khó khăn và cách giải quyết:</strong> nguyên tắc dễ trở nên chung chung. Giải pháp là chuyển mỗi nguyên tắc thành hành động và bằng chứng cần lưu ở ba giai đoạn trước – trong – sau.</div><h3>Mười nguyên tắc cá nhân</h3><div class="cards"><div class="card"><b>1. Minh bạch</b><p>Ghi tên công cụ, mục đích và phần có AI hỗ trợ.</p></div><div class="card"><b>2. Kiểm chứng</b><p>Đối chiếu thông tin quan trọng với nguồn đáng tin.</p></div><div class="card"><b>3. Bảo mật</b><p>Không nhập dữ liệu cá nhân hoặc dữ liệu học sinh.</p></div><div class="card"><b>4. Bản quyền</b><p>Ghi nguồn và không nhận sản phẩm AI là hoàn toàn tự làm.</p></div><div class="card"><b>5. Con người quyết định</b><p>Sinh viên chọn, biên tập và chịu trách nhiệm cuối cùng.</p></div><div class="card"><b>6. Công bằng</b><p>Kiểm tra định kiến trong ngôn ngữ và hình ảnh.</p></div><div class="card"><b>7. Đúng mục đích</b><p>Chỉ dùng AI khi làm tăng giá trị học tập.</p></div><div class="card"><b>8. Truy vết</b><p>Lưu prompt, đầu ra, chỉnh sửa và nguồn.</p></div><div class="card"><b>9. An toàn</b><p>Không giao AI tự quyết định điểm số hoặc kết luận về người học.</p></div><div class="card"><b>10. Chịu trách nhiệm</b><p>Sửa sai và sẵn sàng giải trình.</p></div></div><div class="gallery"><figure><button aria-label="Mở ảnh: Bộ 10 nguyên tắc cá nhân sử dụng AI có trách nhiệm" class="imgbtn"><img alt="Bộ 10 nguyên tắc cá nhân sử dụng AI có trách nhiệm" loading="lazy" src="images/image-23.png"/></button><figcaption>Bộ 10 nguyên tắc cá nhân sử dụng AI có trách nhiệm</figcaption></figure></div><p class="ai">AI hỗ trợ biên tập cấu trúc; sinh viên đối chiếu nguồn, xây dựng nguyên tắc và chịu trách nhiệm cuối cùng.</p><div class="source-detail"><h3>Nội dung trình bày chi tiết</h3><p class="detail-intro">Phần dưới đây bổ sung đầy đủ nội dung đã thực hiện trong file Word tương ứng, gồm quy trình, công cụ, bảng kết quả, khó khăn, cách xử lý và tự đánh giá.</p><p><strong>TRƯỜNG ĐẠI HỌC SƯ PHẠM NGHỆ THUẬT TRUNG ƯƠNG<br/>
+KHOA GIÁO DỤC ĐẠI CƯƠNG</strong></p><h4><strong>BÀI TẬP 6</strong></h4><p><em>Sử dụng AI có trách nhiệm trong học tập và nghiên cứu</em></p><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 35%"/>
+<col style="width: 64%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Họ và tên</strong></th>
+<th>Tạ Uyên Trang</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ngành</strong></td>
+<td>Sư phạm Âm nhạc</td>
+</tr>
+<tr>
+<td><strong>Mã sinh viên</strong></td>
+<td>2552210049</td>
+</tr>
+<tr>
+<td><strong>Lớp</strong></td>
+<td>K20A SPAN</td>
+</tr>
+<tr>
+<td><strong>Giảng viên hướng dẫn</strong></td>
+<td>GV. Vũ Việt Hoàng</td>
+</tr>
+</tbody>
+</table></div><p>Hà Nội, 2026</p><h4>1. Mục tiêu và cách xây dựng nguyên tắc</h4><p>Bài tập chuyển các hướng dẫn cấp quốc tế thành bộ quy tắc hành động cá nhân cho sinh viên Sư phạm Âm nhạc. Tôi đối chiếu bốn nguồn chính: UNESCO về AI tạo sinh trong giáo dục; NIST AI RMF về quản trị rủi ro và độ tin cậy; OECD AI Principles về quyền con người, minh bạch và trách nhiệm; Microsoft Responsible AI Standard về công bằng, an toàn, riêng tư, bao trùm và giám sát của con người.</p><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Nguồn</strong></th>
+<th><strong>Điểm rút ra</strong></th>
+<th><strong>Ứng dụng cá nhân</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UNESCO (2023)</td>
+<td>Tiếp cận lấy con người làm trung tâm; bảo vệ dữ liệu; bảo đảm mục đích giáo dục.</td>
+<td>Không giao toàn bộ hoạt động tư duy cho AI; không nhập dữ liệu học sinh.</td>
+</tr>
+<tr>
+<td>NIST (2023; 2024)</td>
+<td>Quản trị, nhận diện, đo lường và quản lý rủi ro; chú trọng độ tin cậy.</td>
+<td>Xác định rủi ro trước khi dùng; lưu bằng chứng kiểm tra.</td>
+</tr>
+<tr>
+<td>OECD (2019, cập nhật 2024)</td>
+<td>Tôn trọng quyền con người; minh bạch; an toàn; trách nhiệm giải trình.</td>
+<td>Ghi rõ AI đã làm gì; sửa lỗi và chịu trách nhiệm.</td>
+</tr>
+<tr>
+<td>Microsoft (2022)</td>
+<td>Công bằng, tin cậy - an toàn, riêng tư - bảo mật, bao trùm, minh bạch, trách nhiệm.</td>
+<td>Kiểm tra thiên lệch và duy trì quyền can thiệp của con người.</td>
+</tr>
+</tbody>
+</table></div><h4>2. Mười nguyên tắc cá nhân</h4><p><strong>1. Minh bạch:</strong> Ghi tên công cụ, mục đích, ngày sử dụng và phần nội dung có AI hỗ trợ.</p><p><strong>2. Kiểm chứng:</strong> Đối chiếu thông tin quan trọng với ít nhất hai nguồn đáng tin; không dùng trích dẫn chưa mở.</p><p><strong>3. Bảo mật:</strong> Không nhập dữ liệu cá nhân, bài chưa công bố, thông tin học sinh hoặc tài khoản.</p><p><strong>4. Bản quyền:</strong> Tôn trọng giấy phép, ghi nguồn, không bắt chước nghệ sĩ sống hoặc nhận sản phẩm AI là tác phẩm hoàn toàn tự làm.</p><p><strong>5. Con người quyết định:</strong> Tôi xác định mục tiêu, chọn phương án, biên tập và chịu trách nhiệm cuối cùng.</p><p><strong>6. Công bằng:</strong> Kiểm tra ngôn ngữ, hình ảnh và ví dụ để tránh định kiến giới, vùng miền, năng lực hoặc hoàn cảnh.</p><p><strong>7. Đúng mục đích:</strong> Chỉ dùng AI khi làm tăng giá trị học tập; không dùng để né tránh việc phải tự thực hiện.</p><p><strong>8. Truy vết:</strong> Lưu prompt, đầu ra, phiên bản chỉnh sửa và nguồn kiểm chứng cho nhiệm vụ quan trọng.</p><p><strong>9. An toàn:</strong> Thử nghiệm trong phạm vi rủi ro thấp; không để AI tự động quyết định điểm số hay kết luận về người học.</p><p><strong>10. Chịu trách nhiệm:</strong> Sửa sai khi phát hiện, thông báo giới hạn và sẵn sàng giải trình quy trình.</p><h4>3. Checklist trước - trong - sau khi dùng AI</h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Giai đoạn</strong></th>
+<th><strong>Câu hỏi kiểm tra</strong></th>
+<th><strong>Bằng chứng cần lưu</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TRƯỚC</td>
+<td>Mục tiêu học tập là gì? AI có thực sự cần thiết? Dữ liệu có nhạy cảm không?</td>
+<td>Mô tả tác vụ; phân loại dữ liệu; tiêu chí chất lượng.</td>
+</tr>
+<tr>
+<td>TRONG</td>
+<td>Prompt có yêu cầu nguồn và giới hạn không? Đầu ra có dấu hiệu sai, thiên lệch hay bịa nguồn không?</td>
+<td>Prompt; đầu ra gốc; ghi chú đối chiếu.</td>
+</tr>
+<tr>
+<td>SAU</td>
+<td>Tôi đã kiểm chứng, biên tập, ghi nhận AI và chịu trách nhiệm chưa?</td>
+<td>Phiên bản cuối; danh mục nguồn; tuyên bố AI.</td>
+</tr>
+</tbody>
+</table></div><h4>4. Tình huống áp dụng trong Sư phạm Âm nhạc</h4><div class="tablewrap detail-table"><table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr>
+<th><strong>Tình huống</strong></th>
+<th><strong>Rủi ro</strong></th>
+<th><strong>Cách xử lý có trách nhiệm</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI gợi ý giáo án</td>
+<td>Nội dung không đúng chương trình hoặc quá sức học sinh.</td>
+<td>Đối chiếu chuẩn đầu ra; thử thời lượng; giáo viên phê duyệt.</td>
+</tr>
+<tr>
+<td>AI tạo hình nhạc cụ</td>
+<td>Sai số dây, tư thế cầm hoặc chi tiết văn hóa.</td>
+<td>Không dùng thay hình kỹ thuật; kiểm tra bởi nguồn chuyên môn.</td>
+</tr>
+<tr>
+<td>AI nhận xét giọng hát</td>
+<td>Thu thập giọng nói và phán đoán thiếu bối cảnh.</td>
+<td>Xin đồng thuận; không tải dữ liệu nhạy cảm; giáo viên quyết định.</td>
+</tr>
+<tr>
+<td>AI viết bài nghiên cứu</td>
+<td>Bịa tài liệu, đạo văn hoặc che giấu đóng góp.</td>
+<td>Mở từng nguồn; tự lập luận; trích dẫn và công bố AI.</td>
+</tr>
+</tbody>
+</table></div><h4>5. Tuyên bố cá nhân</h4><p>Tôi sử dụng AI như công cụ hỗ trợ học tập, không thay thế phán đoán sư phạm, trách nhiệm nghề nghiệp và tiếng nói cá nhân. Khi có xung đột giữa sự tiện lợi và quyền lợi của người học, tôi ưu tiên an toàn, quyền riêng tư và tính công bằng.</p><h4>Tài liệu tham khảo</h4><ul>
+<li><p>UNESCO (2023) Guidance for Generative AI in Education and Research. DOI: 10.54675/EWZM9535.</p></li>
+<li><p>NIST (2023) Artificial Intelligence Risk Management Framework (AI RMF 1.0). DOI: 10.6028/NIST.AI.100-1.</p></li>
+<li><p>NIST (2024) Generative Artificial Intelligence Profile (NIST AI 600-1). DOI: 10.6028/NIST.AI.600-1.</p></li>
+<li><p>OECD (2024) OECD AI Principles, updated 2024. https://www.oecd.org/en/topics/ai-principles.html</p></li>
+<li><p>Microsoft (2022) Responsible AI Standard v2: General Requirements.</p></li>
+</ul></div><div class="pager"><a class="btn secondary" href="#projects">← Trang trước</a><a class="btn" href="#conclusion">Trang tiếp theo →</a></div></section><section class="page" id="conclusion"><span class="pill">Conclusion</span><h2>Tổng kết và tự đánh giá</h2><h3>Kiến thức và kỹ năng thu được</h3><p>Qua sáu bài tập, tôi hình thành một chuỗi kỹ năng số tương đối hoàn chỉnh. Tôi biết tổ chức tệp và thư mục có quy tắc; tìm kiếm và đánh giá nguồn học thuật; viết prompt theo mục tiêu và nguồn; tổ chức họp trực tuyến và quản lý tiến độ; sáng tạo học liệu có AI hỗ trợ; cuối cùng là sử dụng AI theo hướng minh bạch, an toàn và có trách nhiệm. Những kỹ năng này liên kết chặt chẽ với nghề giáo viên âm nhạc, vì giáo viên vừa phải quản lý học liệu, vừa nghiên cứu, thiết kế bài dạy, giao tiếp và bảo vệ quyền lợi người học.</p><h3>Điểm tâm đắc</h3><p>Điểm tôi tâm đắc nhất là sản phẩm “Nhịp điệu quanh em”. Sản phẩm cho thấy công nghệ không nhất thiết làm bài học âm nhạc trở nên phức tạp. Khi mục tiêu sư phạm rõ ràng, AI có thể giúp mở rộng ý tưởng và tạo hình minh họa, còn giáo viên vẫn giữ vai trò chọn lọc, điều chỉnh nhịp độ, kiểm tra tính đúng đắn và tổ chức trải nghiệm âm nhạc thực tế.</p><h3>Khó khăn và cách khắc phục</h3><div class="tablewrap"><table><thead><tr><th>Khó khăn</th><th>Cách khắc phục</th></tr></thead><tbody><tr><td>Nguồn học thuật không đồng đều</td><td>Ưu tiên DOI, phương pháp rõ và đối chiếu nhiều nguồn.</td></tr><tr><td>Đầu ra AI chung chung</td><td>Bổ sung Goal, Context, Sources, Expectations.</td></tr><tr><td>Nhóm chỉ có một thành viên</td><td>Phân vai theo thời điểm, dùng checklist và tự phản biện.</td></tr><tr><td>Hình AI có thể sai chi tiết</td><td>Không dùng cho hướng dẫn kỹ thuật; kiểm tra bằng nguồn chuyên môn.</td></tr></tbody></table></div><h3>Ghi nhận công cụ AI và công nghệ</h3><div class="tablewrap"><table><thead><tr><th>Công cụ</th><th>Mục đích</th><th>Trách nhiệm của sinh viên</th></tr></thead><tbody><tr><td>Microsoft Copilot</td><td>Gợi ý, thử prompt, hỗ trợ cấu trúc và ngôn ngữ.</td><td>Xác định mục tiêu, chọn nguồn, kiểm chứng và biên tập.</td></tr><tr><td>AI tạo hình</td><td>Tạo minh họa cho poster, prompt và kế hoạch họp.</td><td>Chọn ảnh, kiểm tra bối cảnh, ghi nhãn AI.</td></tr><tr><td>Microsoft Teams</td><td>Lập kế hoạch cuộc họp và chia sẻ nội dung.</td><td>Tổ chức, ghi chú, kiểm soát quyền riêng tư.</td></tr><tr><td>Trello</td><td>Theo dõi dự án.</td><td>Tự phân công và cập nhật tiến độ.</td></tr></tbody></table></div><div class="notice"><strong>Tuyên bố sử dụng AI:</strong> AI hỗ trợ gợi ý cấu trúc, diễn đạt, thử nghiệm prompt và tạo một số hình minh họa. AI không thay thế việc xác định mục tiêu học tập, lựa chọn nội dung chuyên môn, đánh giá nguồn, ra quyết định sư phạm, tự phản ánh và chịu trách nhiệm cuối cùng.</div><h3>Đi đến các bài đã hoàn thành</h3><div class="actions"><a class="btn secondary" href="#bai-1">Bài 1</a><a class="btn secondary" href="#bai-2">Bài 2</a><a class="btn secondary" href="#bai-3">Bài 3</a><a class="btn secondary" href="#bai-4">Bài 4</a><a class="btn secondary" href="#bai-5">Bài 5</a><a class="btn secondary" href="#bai-6">Bài 6</a></div><div class="pager"><a class="btn secondary" href="#bai-6">← Bài 6</a><a class="btn" href="#about">Về Giới thiệu ↑</a></div></section></main><footer class="footer"><div><span><strong>Tạ Uyên Trang</strong> · 2552210049 · K20A SPAN</span><span>Học phần: Nhập môn Công nghệ số và ứng dụng trí tuệ nhân tạo</span></div></footer><div aria-label="Xem ảnh lớn" aria-modal="true" class="lightbox" role="dialog"><button aria-label="Đóng" class="close">×</button><img alt="Ảnh phóng to"/></div><script>
+const valid=['about','projects','bai-1','bai-2','bai-3','bai-4','bai-5','bai-6','conclusion'];
+function route(){let id=location.hash.slice(1)||'about';if(!valid.includes(id))id='about';document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===id));document.querySelectorAll('.navlinks a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id));document.title=(document.querySelector('#'+id+' h2')?.textContent||'Portfolio')+' | Tạ Uyên Trang';window.scrollTo(0,0);document.querySelector('.navlinks').classList.remove('open')}
+addEventListener('hashchange',route);route();document.querySelector('.menu').addEventListener('click',()=>document.querySelector('.navlinks').classList.toggle('open'));document.querySelector('.dropbtn').addEventListener('click',e=>e.currentTarget.parentElement.classList.toggle('open'));document.addEventListener('click',e=>{if(!e.target.closest('.dropdown'))document.querySelector('.dropdown').classList.remove('open')});const lb=document.querySelector('.lightbox'),lbi=lb.querySelector('img');document.querySelectorAll('.imgbtn').forEach(b=>b.addEventListener('click',()=>{lbi.src=b.querySelector('img').src;lbi.alt=b.querySelector('img').alt;lb.classList.add('open')}));function closeLb(){lb.classList.remove('open');lbi.src=''}lb.querySelector('.close').addEventListener('click',closeLb);lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});addEventListener('keydown',e=>{if(e.key==='Escape')closeLb()});
+</script></body></html>
